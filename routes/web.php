@@ -30,3 +30,10 @@ Route::middleware([
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+Route::namespace ('App\Http\Controllers')->group(function () {;
+    Route::get('/', 'NineController@index');
+    Route::get('/showphotos', 'SixController@showphoto');
+    Route::get('/teams', 'TwoFiveController@team');
+    Route::get('/addcart', 'EightController@addcart');
+
+});
