@@ -46,9 +46,7 @@
     @livewireStyles
     @yield('css')
 </head>
- <main>
-    @yield('content')
-</main>
+
 <body><section id="top-1" class="engine"><a href="https://mobirise.ws/">星期三寵物學校</a> v4.11.2</section>
 
 <!-- Analytics -->
@@ -70,21 +68,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
   <section class="menu cid-rGsqBtahAB" once="menu" id="menu1-1a">
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg" style="height:80px">
         <div class="container">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
+            <div class="navbar-brand" >
+                {{-- <span class="navbar-logo"> --}}
                     <a href="https://mobirise.com/extensions/petsm4/index.html">
                         <img src="{{ asset('img/logo2.png')}}" alt="Mobirise" title="" style="height: 3rem;">
                     </a>
-                </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-5" href="https://mobirise.com/extensions/petsm4/index.html">星期三寵物學校</a></span>
+                    <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-5" href="https://mobirise.com/extensions/petsm4/index.html">星期三寵物學校</a></span>
+                {{-- </span> --}}
+
             </div>
             <div class="header-area">
               <div class="main-header header-sticky">
                 <div class="container-fluid">
                   <div class="menu-wrapper">
-                    <div class="main-menu d-none d-lg-block">
+                    <div class="main-menu d-none d-lg-block" >
                         <nav>
                             {{ menu('frontend','my_menu') }}
                         </nav>
@@ -97,7 +96,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </nav>
 </section>
 
-
+ <main>
+    @yield('content')
+</main>
 
     <div class="container-fluid">
         <div class="row justify-content-center">
