@@ -6,8 +6,6 @@
 <section class="cid-rGsOE1E5qe" id="header1-1k">
 
 
-
-
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 content align-left py-4 col-lg-5 ">
@@ -19,19 +17,12 @@
 
                 <div class="align-wrap align-left">
                     <div class="icons-wrap">
+                      @foreach ($images as $item)
                         <div class="icon-wrap">
                             <span class="mbr-iconfont mbrib-apple"></span>
-                            <h3 class="icon-title mbr-bold mbr-fonts-style display-7">EAT</h3>
+                            <h3 class="icon-title mbr-bold mbr-fonts-style display-7">{{$item->title}}</h3>
                         </div>
-                        <div class="icon-wrap">
-                            <span class="mbr-iconfont mbrib-globe"></span>
-                            <h3 class="icon-title mbr-bold mbr-fonts-style display-7">PLAY</h3>
-                        </div>
-                        <div class="icon-wrap">
-                            <span class="mbr-iconfont mbrib-github"></span>
-                            <h3 class="icon-title mbr-bold mbr-fonts-style display-7">BRUSH</h3>
-                        </div>
-
+                      @endforeach
                     </div>
                 </div>
 
