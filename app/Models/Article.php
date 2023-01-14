@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class Article extends Model
 {
     use HasFactory;
+
     public function cgy()
     {
         return $this->belongsTo(Cgy::class);

@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class Cgy extends Model
 {
     use HasFactory;
+
     public function articles()
     {
         return $this->hasMany(Article::class);

@@ -5,6 +5,7 @@
 /storage/*.key
 /vendor
 /vendor/*
+/route/
 .env
 .env.*
 .env.backup
