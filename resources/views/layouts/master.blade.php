@@ -47,7 +47,7 @@
     @yield('css')
 </head>
 
-<body><section id="top-1" class="engine"><a href="https://mobirise.ws/">星期三寵物學校</a> v4.11.2</section>
+<!-- <body><section id="top-1" class="engine"><a href="https://mobirise.ws/">星期三寵物學校</a> v4.11.2</section> -->
 
 <!-- Analytics -->
 <!-- Analytics -->
@@ -71,12 +71,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg" style="height:80px">
         <div class="container">
             <div class="navbar-brand" >
-                {{-- <span class="navbar-logo"> --}}
-                    <a href="https://mobirise.com/extensions/petsm4/index.html">
-                        <img src="{{ asset('img/logo2.png')}}" alt="Mobirise" title="" style="height: 3rem;">
-                    </a>
-                    <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-5" href="https://mobirise.com/extensions/petsm4/index.html">星期三寵物學校</a></span>
-                {{-- </span> --}}
+                 <!-- <span class="navbar-logo"> -->
+                    <div class="preloader-img pere-text"     style="margin-bottom: 80px;">
+                      <img src="{{ asset('storage/'.setting('site.logo')) }}" alt="">
+                    </div>
+                    <!-- <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-5" href="https://mobirise.com/extensions/petsm4/index.html">星期三寵物學校</a></span>
+                    /span>  -->
 
             </div>
             <div class="header-area">

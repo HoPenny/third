@@ -11,7 +11,7 @@ class NineController extends Controller
 
     public function index()
     {
-        $sliders = Element::where('page', 'index')->where('position', 'slider')->orderBy('sort', 'asc')->get();
+        $petschool = Element::where('page', 'index')->where('position', 'school')->orderBy('sort', 'asc')->first();
         $arrivals = Item::where('cgy_id', 2)->where('enabled', true)->orderBy('sort', 'asc')->get();
         $images = Element::where('page', 'index')->where('position', 'images')->orderBy('sort', 'asc')->take(4)->get();
 
@@ -22,7 +22,7 @@ class NineController extends Controller
         $shop = Element::where('page', 'index')->where('position', 'shop')->orderBy('sort', 'asc')->get();
         $shop_method = Element::where('page', 'index')->where('position', 'shop_method')->orderBy('sort', 'asc')->get();
 
-        return view('index', compact('sliders', 'arrivals', 'images', 'new_product_top', 'new_products', 'video', 'shop', 'shop_method'));
+        return view('index', compact('petschool', 'arrivals', 'images', 'new_product_top', 'new_products', 'video', 'shop', 'shop_method'));
 
         return view('index');
 

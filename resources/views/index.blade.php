@@ -10,17 +10,16 @@
         <div class="row">
             <div class="col-md-12 content align-left py-4 col-lg-5 ">
 
-                <h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-2">Pets Training School</h1>
-                <p class="mbr-text pb-3 align-left mbr-fonts-style display-7"> Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Sed eu dui non diam eleifend egestas id a
-                    ligula.</p>
-
+                <h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-6">{{$petschool->title}}</h1>
+                <p class="mbr-text pb-3 align-left mbr-fonts-style display-7">{{$petschool->subtitle}} </p>
                 <div class="align-wrap align-left">
                     <div class="icons-wrap">
                       @foreach ($images as $item)
-                        <div class="icon-wrap">
-                            <span class="mbr-iconfont mbrib-apple"></span>
-                            <h3 class="icon-title mbr-bold mbr-fonts-style display-7">{{$item->title}}</h3>
+                        <div class="icon-wrap" style="width: 80px;" >
+                            {!!$item->content!!}
+                            <div style="width: 150px;">
+                              <h2 class="icon-title mbr-bold mbr-fonts-style display-5" style="color:#00CCCC;">{{$item->title}}</h2>
+                            </div>
                         </div>
                       @endforeach
                     </div>
@@ -270,120 +269,8 @@ Teach Your Pet Any Active Games</h1>
     </div>
 </section>
 
-<section class="progress-bars4 circle-progress-section cid-rGtBXDvleS" id="progress-bars2-3f">
-
-
-
-
-
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-7 pb-5">
-                <h2 class="align-left mbr-bold mbr-fonts-style display-2"><a href="https://mobirise.com/extensions/petsm4/schooldemo.html#"><strong>Happy to welcome you</strong></a>
-                    to our circle of friends</h2>
-
-            </div>
-
-            <div class="col-md-5 pb-5 m-auto">
-
-                <div class="link-wrap">
-                    <img class="bone" src="{{ asset('img/bone.png')}}">
-                    <h3 class="mbr-white align-left mbr-bold mbr-fonts-style display-5">Book a Tour
-                    </h3>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="media-container-row">
-            <div class="card p-3 align-left">
-                <div class="wrap">
-                    <div class="pie_progress progress1" role="progressbar" data-goal="50" aria-valuenow="50">
-                        <span class="mbr-iconfont mbrib-apple"></span>
-                    <div class="undefined"><svg version="1.1" preserveAspectRatio="xMinYMin meet" viewBox="0 0 150 150"><ellipse rx="71" ry="71" cx="75" cy="75" stroke="#f2f2f2" fill="none" stroke-width="8"></ellipse><path fill="none" stroke-width="8" stroke="url(#progress-bars2-3f-svg-gradient)" d="M75,4 A71,71 0 0 1 75.00000000000001,146" style="stroke-dasharray: 223.084, 223.084; stroke-dashoffset: 0;"></path></svg></div></div>
-                </div>
-                <div class="content">
-                    <div class="mbr-crt-title">
-                        <h4 class="card-title align-center mbr-semibold pb-2 mbr-fonts-style display-7">FOOD SAFETY</h4>
-                    </div>
-                    <div class="mbr-crt-text">
-                        <p class="mbr-fonts-style align-center mbr-regular card-text display-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla metus metus, ornare
-                            dictum.<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-3 align-left">
-                <div class="wrap">
-                    <div class="pie_progress progress2" role="progressbar" data-goal="60" aria-valuenow="60">
-                        <span class="mbr-iconfont mbrib-idea"></span>
-                    <div class="undefined"><svg version="1.1" preserveAspectRatio="xMinYMin meet" viewBox="0 0 150 150"><ellipse rx="71" ry="71" cx="75" cy="75" stroke="#f2f2f2" fill="none" stroke-width="8"></ellipse><path fill="none" stroke-width="8" stroke="url(#progress-bars2-3f-svg-gradient)" d="M75,4 A71,71 0 1 1 33.26724708723444,132.4402066006213" style="stroke-dasharray: 267.674, 267.674; stroke-dashoffset: 0;"></path></svg></div></div>
-                </div>
-                <div class="content">
-                    <div class="mbr-crt-title">
-                        <h4 class="card-title align-center mbr-semibold pb-2 mbr-fonts-style display-7">ADJUSTED TEMPERATURE</h4>
-                    </div>
-                    <div class="mbr-crt-text">
-                        <p class="mbr-fonts-style align-center mbr-regular card-text display-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla metus metus, ornare
-                            dictum.<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-3 align-left">
-                <div class="wrap">
-                    <div class="pie_progress progress3" role="progressbar" data-goal="75" aria-valuenow="75">
-                        <span class="mbr-iconfont mbrib-github"></span>
-                    <div class="undefined"><svg version="1.1" preserveAspectRatio="xMinYMin meet" viewBox="0 0 150 150"><ellipse rx="71" ry="71" cx="75" cy="75" stroke="#f2f2f2" fill="none" stroke-width="8"></ellipse><path fill="none" stroke-width="8" stroke="url(#progress-bars2-3f-svg-gradient)" d="M75,4 A71,71 0 1 1 4,75.00000000000001" style="stroke-dasharray: 334.627, 334.627; stroke-dashoffset: 0;"></path></svg></div></div>
-                </div>
-                <div class="content">
-                    <div class="mbr-crt-title">
-                        <h4 class="card-title align-center mbr-semibold pb-2 mbr-fonts-style display-7">PET MEDICAL HISTORY</h4>
-                    </div>
-                    <div class="mbr-crt-text">
-                        <p class="mbr-fonts-style align-center mbr-regular card-text display-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla metus metus, ornare
-                            dictum.<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card p-3 align-left">
-                <div class="wrap">
-                    <div class="pie_progress progress4" role="progressbar" data-goal="100" aria-valuenow="100">
-                        <span class="mbr-iconfont mbrib-globe"></span>
-                    <div class="undefined"><svg version="1.1" preserveAspectRatio="xMinYMin meet" viewBox="0 0 150 150"><ellipse rx="71" ry="71" cx="75" cy="75" stroke="#f2f2f2" fill="none" stroke-width="8"></ellipse><path fill="none" stroke-width="8" stroke="url(#progress-bars2-3f-svg-gradient)" d="M75,4 A71,71 0 1 1 74.99955389384317,4.000000001401489" style="stroke-dasharray: 446.168, 446.168; stroke-dashoffset: 0;"></path></svg></div></div>
-                </div>
-                <div class="content">
-                    <div class="mbr-crt-title">
-                        <h4 class="card-title align-center mbr-semibold pb-2 mbr-fonts-style display-7">PLAY SPACE</h4>
-                    </div>
-                    <div class="mbr-crt-text">
-                        <p class="mbr-fonts-style align-center mbr-regular card-text display-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla metus metus, ornare
-                            dictum.<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</section>
 
 <section class="tabs cid-rGtBVIyxcv" id="pricing-tables1-3e">
-
-
-
 
     <div class="container d-flex flex-column">
 
@@ -401,12 +288,6 @@ Teach Your Pet Any Active Games</h1>
                         </div>
                         <div class="plan-body card1">
                             <div class="plan-list">
-
-
-
-
-
-
 
 
                             <div class="plan-item d-flex justify-content-center">
@@ -446,13 +327,6 @@ Teach Your Pet Any Active Games</h1>
                         <div class="plan-body card2">
                             <div class="plan-list">
 
-
-
-
-
-
-
-
                             <div class="plan-item d-flex justify-content-center">
                                     <span class="mbr-iconfont mbrib-success" style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);"></span>
                                     <p class="item2 mbr-fonts-style display-4">Single room
@@ -489,13 +363,6 @@ Teach Your Pet Any Active Games</h1>
                         <div class="plan-body card1">
                             <div class="plan-list">
 
-
-
-
-
-
-
-
                             <div class="plan-item d-flex justify-content-center">
                                     <span class="mbr-iconfont mbrib-success" style="color: rgb(122, 186, 89); fill: rgb(122, 186, 89);"></span>
                                     <p class="mbr-fonts-style display-4">Single room
@@ -516,13 +383,11 @@ Teach Your Pet Any Active Games</h1>
                                 </span>
                                 <span class="price-figure mbr-bold mbr-fonts-style display-2">550</span>
 
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
 
         </div>
     </div>
@@ -674,145 +539,8 @@ Teach Your Pet Any Active Games</h1>
     </div>
 </section>
 
-<section class="progress-bars4 circle-progress-section cid-rGtHOr5vjy" id="progress-bars1-3z">
 
 
-
-
-
-
-    <div class="container">
-
-
-
-
-        <div class="media-container-row">
-            <div class="card p-3 align-left">
-                <div class="wrap">
-                    <div class="pie_progress progress1" role="progressbar" data-goal="50" aria-valuenow="50">
-                        <h5 class="number mbr-bold align-center mbr-fonts-style display-2">1</h5>
-                    <div class="undefined"><svg version="1.1" preserveAspectRatio="xMinYMin meet" viewBox="0 0 150 150"><ellipse rx="71" ry="71" cx="75" cy="75" stroke="#f2f2f2" fill="none" stroke-width="8"></ellipse><path fill="none" stroke-width="8" stroke="url(#progress-bars1-3z-svg-gradient)" d="M75,4 A71,71 0 0 1 75.00000000000001,146" style="stroke-dasharray: 223.084, 223.084; stroke-dashoffset: 0;"></path></svg></div></div>
-                </div>
-                <div class="content">
-                    <div class="mbr-crt-title">
-                        <h4 class="card-title mbr-semibold pb-2 mbr-fonts-style display-7">STEP ONE
-                        </h4>
-                    </div>
-                    <div class="mbr-crt-text">
-                        <p class="mbr-fonts-style mbr-regular card-text display-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla metus metus, ornare sit amet
-                            dictum.<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-3 align-left">
-                <div class="wrap">
-                    <div class="pie_progress progress2" role="progressbar" data-goal="75" aria-valuenow="75">
-                        <h5 class="number mbr-bold align-center mbr-fonts-style display-2">2</h5>
-                    <div class="undefined"><svg version="1.1" preserveAspectRatio="xMinYMin meet" viewBox="0 0 150 150"><ellipse rx="71" ry="71" cx="75" cy="75" stroke="#f2f2f2" fill="none" stroke-width="8"></ellipse><path fill="none" stroke-width="8" stroke="url(#progress-bars1-3z-svg-gradient)" d="M75,4 A71,71 0 1 1 4,75.00000000000001" style="stroke-dasharray: 334.627, 334.627; stroke-dashoffset: 0;"></path></svg></div></div>
-                </div>
-                <div class="content">
-                    <div class="mbr-crt-title">
-                        <h4 class="card-title mbr-semibold pb-2 mbr-fonts-style display-7">STEP TWO
-                        </h4>
-                    </div>
-                    <div class="mbr-crt-text">
-                        <p class="mbr-fonts-style mbr-regular card-text display-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla metus metus, ornare sit amet
-                            dictum.<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-3 align-left">
-                <div class="wrap">
-                    <div class="pie_progress progress3" role="progressbar" data-goal="100" aria-valuenow="100">
-                        <h5 class="number mbr-bold align-center mbr-fonts-style display-2">3</h5>
-                    <div class="undefined"><svg version="1.1" preserveAspectRatio="xMinYMin meet" viewBox="0 0 150 150"><ellipse rx="71" ry="71" cx="75" cy="75" stroke="#f2f2f2" fill="none" stroke-width="8"></ellipse><path fill="none" stroke-width="8" stroke="url(#progress-bars1-3z-svg-gradient)" d="M75,4 A71,71 0 1 1 74.99955389384317,4.000000001401489" style="stroke-dasharray: 446.168, 446.168; stroke-dashoffset: 0;"></path></svg></div></div>
-                </div>
-                <div class="content">
-                    <div class="mbr-crt-title">
-                        <h4 class="card-title mbr-semibold pb-2 mbr-fonts-style display-7">STEP THREE
-                        </h4>
-                    </div>
-                    <div class="mbr-crt-text">
-                        <p class="mbr-fonts-style mbr-regular card-text display-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla metus metus, ornare sit amet
-                            dictum.<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="cid-rGtByMu6AK" id="team4-36">
-
-
-
-
-    <div class="container-fluid">
-        <div class="row">
-
-            <div class="col-md-12 col-lg-7 img-col">
-                <div class="mbr-figure">
-                    <img src="{{ asset('css/07.png')}}" alt="Mobirise">
-                </div>
-
-            </div>
-
-
-            <div class="col-md-12 content py-4 col-lg-5 ">
-                <h1 class="mbr-section-title align-left mbr-bold pb-2 mbr-fonts-style display-2"><strong><a href="https://mobirise.com/extensions/petsm4/schooldemo.html#"><b>Robert</b></a> </strong>Sallivan
-                </h1>
-                <p class="align-left mbr-regular pb-3 mbr-fonts-style display-7">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac feugiat neque. Nulla gravida sodales
-                    enim at interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                    turpis egestas.</p>
-
-
-
-                <div class="icons-wrap row">
-                    <div class="icon-wrap align-left col-md-4">
-                        <span class="mbr-iconfont mbrib-globe"></span>
-                        <div class="text-wrap">
-                            <h3 class="icon-title align-left mbr-bold mbr-fonts-style display-7">DOG CARE</h3>
-                            <p class="mbr-text mbr-regular align-left mbr-fonts-style display-4"> Lorem
-                                ipsum dolor amet, consectetur adipiscing elit.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="icon-wrap align-left col-md-4">
-                        <span class="mbr-iconfont mbrib-alert"></span>
-                        <div class="text-wrap">
-                            <h3 class="icon-title align-left mbr-bold mbr-fonts-style display-7">TRAINING</h3>
-                            <p class="mbr-text mbr-regular align-left mbr-fonts-style display-4"> Lorem ipsum
-                                dolor amet, consectetur adipiscing elit.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="icon-wrap align-left col-md-4">
-                        <span class="mbr-iconfont mbrib-hearth"></span>
-                        <div class="text-wrap">
-                            <h3 class="icon-title align-left mbr-bold mbr-fonts-style display-7">FIRST AID</h3>
-                            <p class="mbr-text mbr-regular align-left mbr-fonts-style display-4"> Lorem ipsum
-                                dolor amet, consectetur adipiscing elit.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
 
 <section class="carouse1 slide testimonials-slider cid-rGtBR1utsO" data-interval="false" id="testimonials-slider1-3c">
 
@@ -820,85 +548,15 @@ Teach Your Pet Any Active Games</h1>
 
 
 
-    <div class="container text-center">
-
-
-
-        <div class="carousel slide" role="listbox" data-pause="true" data-keyboard="false" data-ride="carousel" data-interval="5000" id="testimonials-slider1-3c-carousel">
-            <div class="carousel-inner">
 
 
 
 
-            <div class="carousel-item">
-                    <div class="user col-md-10 col-lg-8">
-                        <div class="user_image">
-                            <img src="{{ asset('img/face1.jpg')}}">
-                        </div>
 
 
-                        <div class="user_text pb-2">
-                            <p class="mbr-fonts-style mbr-regular display-7">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper neque dapibus
-                                ipsum semper, sit amet luctus turpis porttitor. Ut libero ante, varius quis ligula in,
-                                aliquet consectetur tortor. Proin aliquet neque nibh, pretium rutrum quam mattis a.
-                                Morbi vitae sodales metus. Pellentesque vel elit ullamcorper, pellentesque.</p>
-                        </div>
-
-                        <div class="card-img pb-3">
-                            <span class="mbr-iconfont mbrib-quote-left"></span>
-                        </div>
-
-                        <h3 class="user_status mbr-semibold mbr-fonts-style display-4">DOG OWNER</h3>
-                        <h4 class="user_name mbr-bold mbr-fonts-style display-5">Peter Ronson</h4>
-
-                    </div>
-                </div><div class="carousel-item">
-                    <div class="user  col-md-10 col-lg-8">
-                        <div class="user_image">
-                            <img src="{{ asset('img/face2.jpg')}}">
-                        </div>
 
 
-                        <div class="user_text pb-2">
-                            <p class="mbr-fonts-style mbr-regular display-7">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper neque dapibus
-                                ipsum semper, sit amet luctus turpis porttitor. Ut libero ante, varius quis ligula in,
-                                aliquet consectetur tortor. Proin aliquet neque nibh, pretium rutrum quam mattis a.
-                                Morbi vitae sodales metus. Pellentesque vel elit ullamcorper, pellentesque.</p>
-                        </div>
 
-                        <div class="card-img pb-3">
-                            <span class="mbr-iconfont mbrib-quote-left"></span>
-                        </div>
-
-                        <h3 class="user_status mbr-semibold mbr-fonts-style display-4">CAT OWNER</h3>
-                        <h4 class="user_name mbr-bold mbr-fonts-style display-5">Emilia Johnson</h4>
-
-                    </div>
-                </div><div class="carousel-item active">
-                    <div class="user  col-md-10 col-lg-8">
-                        <div class="user_image">
-                            <img src="{{ asset('img/face3.jpg')}}">
-                        </div>
-
-                        <div class="user_text pb-2">
-                            <p class="mbr-fonts-style mbr-regular display-7">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper neque dapibus
-                                ipsum semper, sit amet luctus turpis porttitor. Ut libero ante, varius quis ligula in,
-                                aliquet consectetur tortor. Proin aliquet neque nibh, pretium rutrum quam mattis a.
-                                Morbi vitae sodales metus. Pellentesque vel elit ullamcorper, pellentesque.</p>
-                        </div>
-
-                        <div class="card-img pb-3">
-                            <span class="mbr-iconfont mbrib-quote-left"></span>
-                        </div>
-
-                        <h3 class="user_status mbr-semibold mbr-fonts-style display-4">DOG OWNER</h3>
-                        <h4 class="user_name mbr-bold mbr-fonts-style display-5">Ben Jason</h4>
-
-                    </div>
-                </div></div>
 
             <ol class="carousel-indicators">
                 <li data-app-prevent-settings="" data-target="#testimonials-slider1-3c-carousel" class="" data-slide-to="0"></li>

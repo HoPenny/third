@@ -1,5 +1,5 @@
 section {
-  background-color: #eeeeee; 
+  background-color: #eeeeee;
   overflow: hidden;}
 
   section,
@@ -8,7 +8,7 @@ section {
       position: relative;
       word-wrap: break-word;
   }
-  
+
 
 a.mbr-iconfont:hover {
   text-decoration: none; }
@@ -71,7 +71,7 @@ textarea[type="hidden"] {
   display: none; }
 
 body {
-  position: relative; 
+  position: relative;
 color: #181818}
 
 section {
@@ -115,7 +115,7 @@ section {
 .align-right {
   text-align: right; }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   .align-left,
   .align-center,
   .align-right,
