@@ -27,7 +27,7 @@
 
 
 
-                <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="https://mobirise.co/">VIEW MORE</a> <a class="btn btn-md btn-primary-outline display-4" href="https://mobirise.co/">BOOK NOW</a></div>
+                <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="https://mobirise.co/">{{__('VIEW MORE')}}</a> <a class="btn btn-md btn-primary-outline display-4" href="https://mobirise.co/">{{__('BOOK NOW')}}</a></div>
 
             </div>
             <div class="col-md-12 col-lg-7 img-col">
@@ -57,7 +57,8 @@
                             <path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z" id="svg_1" class="" transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
                         </g>
                     </svg>
-                    <div class="card-img">
+                    @foreach ($shops as $item)
+                     <div class="card-img">
                         <span class="mbr-iconfont mbrib-home"></span>
                     </div>
                     <div class="card-box">
@@ -68,6 +69,8 @@
                         <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="https://mobirise.com/extensions/petsm4/schooldemo.html#" class="text-black">
                                 VIEW MORE</a></h5>
                     </div>
+                    @endforeach
+
                 </div>
             </div>
             <div class="card col-12 col-md-6 col-lg-3">
