@@ -23,11 +23,12 @@ class TwoFiveController extends Controller
     {
         $slider = Element::where('page', 'demo')->where('position', 'slider')->first();
 
-        $items = Item::where('cgy_id', 1)->orderBy('sort', 'asc')->skip(1)->take(6)->get();
-        $tags = Cgy::get();
+        $items = Item::orderBy('sort', 'asc')->get();
+        $cgies = Cgy::get();
         // $images = Element::where('page', 'index')->where('position', 'images')->orderBy('id', 'asc')->get();
         $texts = Element::where('page', 'index')->where('position', 'shop')->orderBy('id', 'asc')->get();
+        $texts_c = Element::where('page', 'index')->where('position', 'shop_method')->orderBy('id', 'asc')->get();
 
-        return view('shop', compact('slider', 'items', 'tags', 'texts'));
+        return view('shop', compact('slider', 'items', 'cgies', 'texts', 'texts_c'));
     }
 }

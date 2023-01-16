@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="{{ asset('css/jquery.datetimepicker.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style(1).css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style(2).css') }}">
+    <link rel="stylesheet" href="{{ asset('css/test-style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/recaptcha.css') }}">
 
     <link rel="preload" as="style" href="{{ asset('css/mbr-additional.css') }}">

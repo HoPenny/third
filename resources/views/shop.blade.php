@@ -282,20 +282,22 @@
     </div>
 
   </section>
-{{-- 商品頁 --}}
+
+{{-- 商品區 --}}
   <section class="mbr-gallery cid-rGtDhIxNyM" id="shop1-3n">
     <div class="container">
       <div class="mbr-shop" show-sidebar="" card-buttons="">
+
         <!-- Shop Gallery -->
         <div class="row mbr-shop__row col-md-12">
           <div class="wrapper-shop-items col-xl-9">
             <div class="mbr-gallery-row">
-
-            @foreach ($items as $item)
               <div>
+ {{-- 商品排版區塊 --}}
                 <div class="shop-items">
-                  {{-- 商品排版區塊 --}}
-                  <div class="mbr-gallery-item" data-tags="Awesome" data-slide-to="0" data-seller="false"
+
+                  @foreach ($items as $key => $item)
+                  <div class="mbr-gallery-item" data-tags="{{ $item->cgy_id}}" data-slide-to="{{ $key}}" data-seller="false"
                     data-price="80" data-oldprice="160">
 
                     <div class="item_overlay" data-toggle="modal"></div>
@@ -309,9 +311,9 @@
 
                       <div class="sidebar_wraper">
                         <h4 class="item-title mbr-fonts-style mbr-text display-5">{{ $item->title }}</h4>
-                        <div class="price-block"><span class="shop-item-price mbr-fonts-style display-5">{{ $item->price_new }}</span>
+                        <div class="price-block"><span class="shop-item-price mbr-fonts-style display-5">${{ $item->price_new }}</span>
                            {{-- 點擊後出現的區塊 --}}
-                          <span class="oldprice mbr-fonts-style display-7" style="display: none;">$160</span></div>
+                           <span class="oldprice mbr-fonts-style display-7" style="display: none;">$160</span></div>
                         <div class="card-description">Casual shoes (contact us for sizing)<br><br>
                           <ul>
                             <li>Lightweight textured fabric</li>
@@ -327,9 +329,11 @@
 
                     </div>
                   </div>
+                  @endforeach
                 </div>
+
               </div>
-            @endforeach
+
 
 {{-- 分類側邊欄 --}}
               <div class="clearfix"></div>
@@ -339,7 +343,7 @@
             <div class="sidebar-background"></div>
             <div class="sidebar-block container range-slider">
             <div class="sidebar-block container sidebar-categories">
-              <h4 class="sidebar-title mbr-fonts-style mbr-text display-7">分類</h4>
+              <h1 class="sidebar-title mbr-fonts-style mbr-text display-7" style="color: rgb(122, 186, 89)">分類</h1>
               <div class="categories col-md-12">
                 <div class="categories-titles">
                   <!-- Filter -->
@@ -347,7 +351,7 @@
                     <ul buttons="0">
                       <li class="mbr-gallery-filter-all active display-7">全部</li>
 
-                      @foreach ($tags as $item)
+                      @foreach ($cgies as $item)
                            <li class="display-7">{{ $item->title }}</li>
                       @endforeach
 
@@ -357,7 +361,17 @@
               </div>
             </div>
           </div>
-        </div><!-- Lightbox -->
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- Lightbox -->
         <div class="shopItemsModal_wraper" style="z-index: 100;">
           <div class="shopItemsModalBg"></div>
           <div class="shopItemsModal row">
@@ -371,155 +385,118 @@
       </div>
     </div>
 
+
+
+
   <section class="tabs cid-rGtLYTvqHP" id="pricing-tables1-41">
 
     <div class="container d-flex flex-column">
 
-      <div class="tab-content">
-        <div id="tab1" class="tab-pane in active" role="tabpanel">
-          <div class="row">
+        <div class="tab-content">
+            <div id="tab1" class="tab-pane in active" role="tabpanel">
+                <div class="row">
 
-            <div class="plan col-12 justify-content-center col-lg-4">
-              <div class="plan-header card1">
-                <h3 class="plan-title mbr-black mbr-bold pb-1 mbr-fonts-style display-7">PET TOYS BOX</h3>
-                <h4 class="month mbr-black mbr-bold mbr-fonts-style display-2">Lite</h4>
+                    <div class="plan col-12 justify-content-center col-lg-4">
+                        <div class="plan-header card1">
+                            <h3 class="plan-title mbr-black mbr-bold pb-1 mbr-fonts-style display-7">喵喵有驚喜</h3>
+                            <h4 class="month mbr-black mbr-bold mbr-fonts-style display-2">Lite</h4>
 
-                <span class="mbr-iconfont pt-3 pb-2 icon mbrib-home"></span>
+                            <span class="mbr-iconfont pt-3 pb-2 icon mbrib-home"></span>
 
-              </div>
-              <div class="plan-body card1">
-                <div class="plan-list">
+                        </div>
 
-                  @foreach ($texts as $text)
-                  <div class="plan-item d-flex justify-content-center">
-                    <span class="mbr-iconfont mbrib-success"
-                      style="color: rgb(122, 186, 89); fill: rgb(122, 186, 89);"></span>
-                    <p class="mbr-fonts-style display-4">{{ $text->title }}<br></p>
-                  </div>
-                  @endforeach
+                        <div class="plan-body card1">
+                            <div class="plan-list">
 
-                  {{-- @foreach ($texts_2 as $text)
-                  <div class="plan-item d-flex justify-content-center">
-                    <span class="mbr-iconfont mbrib-success"
-                      style="color: rgb(122, 186, 89); fill: rgb(122, 186, 89);"></span>
-                    <p class="mbr-fonts-style display-4">{{ $text->title }}<br></p>
-                  </div>
-                  @endforeach --}}
+                          @foreach ($texts as $text)
+                            <div class="plan-item d-flex justify-content-center">
+                                    <span class="mbr-iconfont mbrib-success" style="color: rgb(122, 186, 89); fill: rgb(122, 186, 89);"></span>
+                                    <p class="mbr-fonts-style display-4">{{ $text->title }}
+                                    </p>
+                                </div>
+                          @endforeach
+                              </div>
+
+                            <div class="plan-price">
+                                <span class="price-value mbr-bold mbr-fonts-style display-5">
+                                    $
+                                </span>
+                                <span class="price-figure mbr-bold mbr-fonts-style display-2">50</span>
 
 
-                  {{-- <div class="plan-item d-flex justify-content-center">
-                    <span class="mbr-iconfont mbrib-success"
-                      style="color: rgb(122, 186, 89); fill: rgb(122, 186, 89);"></span>
-                    <p class="mbr-fonts-style display-4">Active Games<br></p>
-                  </div>
-                  <div class="plan-item d-flex justify-content-center">
-                    <span class="mbr-iconfont mbri-close" style="color: rgb(56, 56, 56); fill: rgb(56, 56, 56);"></span>
-                    <p class="mbr-fonts-style display-4">Healthy Meals<br></p>
-                  </div>
-                  <div class="plan-item d-flex justify-content-center">
-                    <span class="mbr-iconfont mbri-close" style="color: rgb(56, 56, 56); fill: rgb(56, 56, 56);"></span>
-                    <p class="mbr-fonts-style display-4">Premium Materials<br></p>
-                  </div>
-                </div> --}}
-                <div class="plan-price">
-                  <span class="price-value mbr-bold mbr-fonts-style display-5">
-                    $
-                  </span>
-                  <span class="price-figure mbr-bold mbr-fonts-style display-2">50</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="plan col-12 center-card justify-content-center col-lg-4">
+                        <div class="plan-header card2">
+                            <h3 class="plan-title2 mbr-black mbr-bold pb-1 mbr-fonts-style display-7">喵喵好服務</h3>
+                            <h4 class="month2 mbr-black mbr-bold mbr-fonts-style display-2">Basic</h4>
+
+                            <span class="mbr-iconfont pt-3 pb-2 icon mbrib-home"></span>
+
+                        </div>
+                        <div class="plan-body card2">
+                            <div class="plan-list">
+
+                          @foreach ($texts_c as $text)
+                            <div class="plan-item d-flex justify-content-center">
+                                    <span class="mbr-iconfont mbrib-success" style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);"></span>
+                                    <p class="item2 mbr-fonts-style display-4">{{ $text->title }}
+                                    </p>
+                                </div>
+                              @endforeach
+
+
+                              </div>
+                            <div class="plan-price">
+                                <span class="price-value2 mbr-bold mbr-fonts-style display-5">
+                                    $
+                                </span>
+                                <span class="price-figure2 mbr-bold mbr-fonts-style display-2">150</span>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="plan col-12 justify-content-center col-lg-4">
+                        <div class="plan-header card1">
+                            <h3 class="plan-title mbr-black mbr-bold pb-1 mbr-fonts-style display-7">喵喵難伺候</h3>
+                            <h4 class="month mbr-black mbr-bold mbr-fonts-style display-2">Pro</h4>
+
+                            <span class="mbr-iconfont pt-3 pb-2 icon mbrib-home"></span>
+
+                        </div>
+                        <div class="plan-body card1">
+                            <div class="plan-list">
+
+                          @foreach ($texts as $text)
+                            <div class="plan-item d-flex justify-content-center">
+                                    <span class="mbr-iconfont mbrib-success" style="color: rgb(122, 186, 89); fill: rgb(122, 186, 89);"></span>
+                                    <p class="mbr-fonts-style display-4">{{ $text->title }}
+                                    </p>
+                                </div>
+                          @endforeach
+
+                              </div>
+                            <div class="plan-price">
+                                <span class="price-value mbr-bold mbr-fonts-style display-5">
+                                    $
+                                </span>
+                                <span class="price-figure mbr-bold mbr-fonts-style display-2">250</span>
+
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
 
-            <div class="plan col-12 center-card justify-content-center col-lg-4">
-              <div class="plan-header card2">
-                <h3 class="plan-title2 mbr-black mbr-bold pb-1 mbr-fonts-style display-7">PET TOYS BOX</h3>
-                <h4 class="month2 mbr-black mbr-bold mbr-fonts-style display-2">Basic</h4>
 
-                <span class="mbr-iconfont pt-3 pb-2 icon mbrib-home"></span>
-
-              </div>
-              <div class="plan-body card2">
-                <div class="plan-list">
-                  <div class="plan-item d-flex justify-content-center">
-                    <span class="mbr-iconfont mbrib-success"
-                      style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);"></span>
-                    <p class="item2 mbr-fonts-style display-4">Home Toys
-                    </p>
-                  </div>
-                  <div class="plan-item d-flex justify-content-center">
-                    <span class="mbr-iconfont mbrib-success"
-                      style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);"></span>
-                    <p class="item2 mbr-fonts-style display-4">Active Games<br></p>
-                  </div>
-                  <div class="plan-item d-flex justify-content-center">
-                    <span class="mbr-iconfont mbrib-success"
-                      style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);"></span>
-                    <p class="item2 mbr-fonts-style display-4">Healthy Meals<br></p>
-                  </div>
-                  <div class="plan-item d-flex justify-content-center">
-                    <span class="mbr-iconfont mbri-close"
-                      style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);"></span>
-                    <p class="item2 mbr-fonts-style display-4">Premium Materials<br></p>
-                  </div>
-                </div>
-                <div class="plan-price">
-                  <span class="price-value2 mbr-bold mbr-fonts-style display-5">
-                    $
-                  </span>
-                  <span class="price-figure2 mbr-bold mbr-fonts-style display-2">150</span>
-
-
-                </div>
-              </div>
-            </div>
-
-            <div class="plan col-12 justify-content-center col-lg-4">
-              <div class="plan-header card1">
-                <h3 class="plan-title mbr-black mbr-bold pb-1 mbr-fonts-style display-7">PET TOYS BOX</h3>
-                <h4 class="month mbr-black mbr-bold mbr-fonts-style display-2">Pro</h4>
-
-                <span class="mbr-iconfont pt-3 pb-2 icon mbrib-home"></span>
-
-              </div>
-              <div class="plan-body card1">
-                <div class="plan-list">
-
-                  <div class="plan-item d-flex justify-content-center">
-                    <span class="mbr-iconfont mbrib-success"
-                      style="color: rgb(122, 186, 89); fill: rgb(122, 186, 89);"></span>
-                    <p class="mbr-fonts-style display-4">Home Toys
-                    </p>
-                  </div>
-                  <div class="plan-item d-flex justify-content-center">
-                    <span class="mbr-iconfont mbrib-success"
-                      style="color: rgb(122, 186, 89); fill: rgb(122, 186, 89);"></span>
-                    <p class="mbr-fonts-style display-4">Active Games<br></p>
-                  </div>
-                  <div class="plan-item d-flex justify-content-center">
-                    <span class="mbr-iconfont mbrib-success"
-                      style="color: rgb(122, 186, 89); fill: rgb(122, 186, 89);"></span>
-                    <p class="mbr-fonts-style display-4">Healthy Meals<br></p>
-                  </div>
-                  <div class="plan-item d-flex justify-content-center">
-                    <span class="mbr-iconfont mbri-success"
-                      style="color: rgb(122, 186, 89); fill: rgb(122, 186, 89);"></span>
-                    <p class="mbr-fonts-style display-4">Premium Materials<br></p>
-                  </div>
-                </div>
-                <div class="plan-price">
-                  <span class="price-value mbr-bold mbr-fonts-style display-5">
-                    $
-                  </span>
-                  <span class="price-figure mbr-bold mbr-fonts-style display-2">250</span>
-
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
 
 </body>

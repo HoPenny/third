@@ -4,6 +4,16 @@
 
 -------*/
 
+/* .shop-items {
+    display: flex;
+} */
+
+/* .mbr-gallery-item {
+    float: left;
+} */
+
+/* 以上為我修改的 */
+
 .mbr-gallery .mbr-gallery-item {
     position: relative;
     display: inline-block;
