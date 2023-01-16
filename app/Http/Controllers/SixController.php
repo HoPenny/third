@@ -23,14 +23,13 @@ class SixController extends Controller
     //儲存聯絡單
     public function contact(FormRequest $request)
     {
-        $contact = Contact::create($request->only('email', 'message', 'mobile', 'name'));
-
+        $contact = Contact::create($request->only('email', 'message', 'name'));
         if (isset($contact)) {
             flash('Send successfully')->success(); //綠色框
         } else {
             flash('Failed to send')->error(); //紅色框
         }
-        return redirect('/showphotos');
+        return redirect('/');
     }
 
     //首頁價目表
@@ -38,8 +37,9 @@ class SixController extends Controller
     {
         $basic = Item::where('cgy_id', 1)->where('enabled', true)->orderBy('sort', 'asc')->take(4)->get();
         $premium = Item::where('cgy_id', 2)->where('enabled', true)->orderBy('sort', 'asc')->take(4)->get();
+        $container = Element::where('page', 'showphoto')->where('position', 'container')->orderBy('sort', 'asc')->get();
 
-        return view('index', compact('basic', 'premium'));
+        return view('index', compact('basic', 'premium', 'container'));
     }
 
     //寵物住宿

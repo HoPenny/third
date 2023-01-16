@@ -33,9 +33,9 @@ Route::group(['prefix' => 'admin'], function () {
 Route::namespace ('App\Http\Controllers')->group(function () {;
     Route::get('/', 'NineController@index');
     Route::get('/', 'SixController@indexdetail');
+    Route::post('/contant', 'SixController@contact');
     Route::get('/showphotos', 'SixController@showphoto');
     Route::get('/stay', 'SixController@stay');
     Route::get('/teams', 'TwoFiveController@team');
     Route::get('/addcart', 'EightController@addcart');
-    Route::post('/showphotos', 'SixController@contact');
 });
