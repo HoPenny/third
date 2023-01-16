@@ -42,4 +42,14 @@ class SixController extends Controller
         return view('index', compact('basic', 'premium'));
     }
 
+    //寵物住宿
+    public function stay()
+    {
+        $cards = Element::where('page', 'stay')->where('position', 'cards')->orderBy('sort', 'asc')->take(3)->get();
+        $basic = Item::where('cgy_id', 1)->where('enabled', true)->orderBy('sort', 'asc')->take(4)->get();
+        $premium = Item::where('cgy_id', 2)->where('enabled', true)->orderBy('sort', 'asc')->take(4)->get();
+
+        return view('stay', compact('cards', 'basic', 'premium'));
+    }
+
 }
