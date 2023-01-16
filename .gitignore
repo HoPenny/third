@@ -4,8 +4,11 @@
 /public/storage
 /storage/*.key
 /vendor
-/vendor/*
+<<<<<<< HEAD
 /route/
+=======
+/vendor/*
+>>>>>>> 9c0d588e2f62da3d55822fdd9c1a92608ffc9f28
 .env
 .env.*
 .env.backup
@@ -19,3 +22,4 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
