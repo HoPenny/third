@@ -69,10 +69,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <section class="menu cid-rGsqBtahAB" once="menu" id="menu1-1a">
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg" style="height:80px">
-        <div class="container">
+        <div class="container" >
             <div class="navbar-brand" >
                  <!-- <span class="navbar-logo"> -->
-                    <div class="preloader-img pere-text"     style="margin-bottom: 80px;">
+                    <div class="preloader-img pere-text"     style="margin-right: 800px;width: 120px;height: 80px;">
                       <img src="{{ asset('storage/'.setting('site.logo')) }}" alt="">
                     </div>
                     <!-- <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-5" href="https://mobirise.com/extensions/petsm4/index.html">星期三寵物學校</a></span>
