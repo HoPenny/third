@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use App\Models\Element;
+use App\Models\Item;
 
 class TwoFiveController extends Controller
 {
@@ -15,5 +16,15 @@ class TwoFiveController extends Controller
         $images = Element::where('page', 'index')->where('position', 'images')->orderBy('id', 'asc')->get();
 
         return view('team', compact('slider', 'counters', 'teams', 'images'));
+    }
+
+    public function shop()
+    {
+        $slider = Element::where('page', 'index')->where('position', 'slider')->orderBy('id', 'asc')->first();
+        $items = Item::where('cgy_id', 1)->orderBy('sort', 'asc')->skip(1)->take(6)->get();
+        $tags = Article::get();
+        // $images = Element::where('page', 'index')->where('position', 'images')->orderBy('id', 'asc')->get();
+
+        return view('shop', compact('slider', 'items', 'tags'));
     }
 }

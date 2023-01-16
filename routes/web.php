@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use TCG\Voyager\Facades\Voyager;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,5 +36,6 @@ Route::namespace ('App\Http\Controllers')->group(function () {;
     Route::get('/showphotos', 'SixController@showphoto');
     Route::get('/teams', 'TwoFiveController@team');
     Route::get('/addcart', 'EightController@addcart');
+    Route::get('/shops', 'TwoFiveController@shop');
 
 });
