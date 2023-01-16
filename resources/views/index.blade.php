@@ -144,7 +144,8 @@
 
 
 
-{{-- @include('index_detail') --}}
+
+@include('index_detail')
 
 <section class="carouse1 slide testimonials-slider cid-rGtBR1utsO" data-interval="false" id="testimonials-slider1-3c">
 

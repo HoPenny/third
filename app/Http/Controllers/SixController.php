@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\FormRequest;
 use App\Models\Contact;
 use App\Models\Element;
+use App\Models\Item;
 use view;
 
 class SixController extends Controller
@@ -31,4 +32,14 @@ class SixController extends Controller
         }
         return redirect('/showphotos');
     }
+
+    //首頁價目表
+    public function indexdetail()
+    {
+        $basic = Item::where('cgy_id', 1)->where('enabled', true)->orderBy('sort', 'asc')->take(4)->get();
+        $premium = Item::where('cgy_id', 2)->where('enabled', true)->orderBy('sort', 'asc')->take(4)->get();
+
+        return view('index', compact('basic', 'premium'));
+    }
+
 }
