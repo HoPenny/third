@@ -108,11 +108,13 @@
           </svg>
 
 
-          <div class="card-img">
+  <div class="card-img">
             <span class="mbr-iconfont mbrib-globe"></span>
           </div>
           <div class="card-box m-auto">
-            <h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">{{__('Premium')}}<br>{{__('Toys')}}</h4>
+
+            <h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">{{ $texts[0]->title }}</h4>
+
             <h5 class="link align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a
                 href="https://mobirise.com/extensions/petsm4/shopdemo.html#" class="text-white">
                 {{__('VIEW MORE')}}</a></h5>
@@ -149,12 +151,12 @@
                 filter=""></path>
             </g>
           </svg>
-
+{{-- 動態文字區 --}}
           <div class="card-img">
             <span class="mbr-iconfont mbrib-github"></span>
           </div>
           <div class="card-box m-auto">
-            <h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">{{__('Activity')}}<br>{{__('Games')}}</h4>
+            <h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">{{ $texts[1]->title }}</h4>
             <h5 class="link align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a
                 href="https://mobirise.com/extensions/petsm4/shopdemo.html#" class="text-white">
                 {{__('VIEW MORE')}}</a></h5>
@@ -211,7 +213,7 @@
           </div>
           <div class="card-box m-auto">
             <h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">
-              {{__('Healthy')}}<br>{{__('Meals')}}</h4>
+              {{ $texts[2]->title }}</h4>
             <h5 class="link align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a
                 href="https://mobirise.com/extensions/petsm4/shopdemo.html#" class="text-white">
                 {{__('VIEW MORE')}}</a></h5>
@@ -268,11 +270,12 @@
           </div>
           <div class="card-box m-auto">
             <h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">
-              {{__('Veterinary')}}<br>{{__('Service')}}</h4>
+              {{ $texts[3]->title }}</h4>
             <h5 class="link align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a
                 href="https://mobirise.com/extensions/petsm4/shopdemo.html#" class="text-white">
                 {{__('VIEW MORE')}}</a></h5>
           </div>
+
         </div>
       </div>
 
@@ -328,7 +331,7 @@
               </div>
             @endforeach
 
-
+{{-- 分類側邊欄 --}}
               <div class="clearfix"></div>
             </div>
           </div>
@@ -342,11 +345,12 @@
                   <!-- Filter -->
                   <div class="mbr-gallery-filter mbr-shop-filter container gallery-filter-active">
                     <ul buttons="0">
-                      <li class="mbr-gallery-filter-all active display-7">{{ $tags }}</li>
-                      <li class="display-7">Awesome</li>
-                      <li class="display-7">Wonderful</li>
-                      <li class="display-7">Creative</li>
-                      <li class="display-7">Responsive</li>
+                      <li class="mbr-gallery-filter-all active display-7">全部</li>
+
+                      @foreach ($tags as $item)
+                           <li class="display-7">{{ $item->title }}</li>
+                      @endforeach
+
                     </ul>
                   </div>
                 </div>
@@ -386,17 +390,27 @@
               <div class="plan-body card1">
                 <div class="plan-list">
 
+                  @foreach ($texts as $text)
                   <div class="plan-item d-flex justify-content-center">
                     <span class="mbr-iconfont mbrib-success"
                       style="color: rgb(122, 186, 89); fill: rgb(122, 186, 89);"></span>
-                    <p class="mbr-fonts-style display-4">Home Toys
-                    </p>
+                    <p class="mbr-fonts-style display-4">{{ $text->title }}<br></p>
                   </div>
+                  @endforeach
+
+                  {{-- @foreach ($texts_2 as $text)
                   <div class="plan-item d-flex justify-content-center">
                     <span class="mbr-iconfont mbrib-success"
                       style="color: rgb(122, 186, 89); fill: rgb(122, 186, 89);"></span>
-                    <p class="mbr-fonts-style display-4">Active Games<br>
-                    </p>
+                    <p class="mbr-fonts-style display-4">{{ $text->title }}<br></p>
+                  </div>
+                  @endforeach --}}
+
+
+                  {{-- <div class="plan-item d-flex justify-content-center">
+                    <span class="mbr-iconfont mbrib-success"
+                      style="color: rgb(122, 186, 89); fill: rgb(122, 186, 89);"></span>
+                    <p class="mbr-fonts-style display-4">Active Games<br></p>
                   </div>
                   <div class="plan-item d-flex justify-content-center">
                     <span class="mbr-iconfont mbri-close" style="color: rgb(56, 56, 56); fill: rgb(56, 56, 56);"></span>
@@ -406,7 +420,7 @@
                     <span class="mbr-iconfont mbri-close" style="color: rgb(56, 56, 56); fill: rgb(56, 56, 56);"></span>
                     <p class="mbr-fonts-style display-4">Premium Materials<br></p>
                   </div>
-                </div>
+                </div> --}}
                 <div class="plan-price">
                   <span class="price-value mbr-bold mbr-fonts-style display-5">
                     $
