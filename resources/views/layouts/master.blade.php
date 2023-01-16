@@ -47,7 +47,7 @@
     @yield('css')
 </head>
 
-<body><section id="top-1" class="engine"><a href="https://mobirise.ws/">星期三寵物學校</a> v4.11.2</section>
+<!-- <body><section id="top-1" class="engine"><a href="https://mobirise.ws/">星期三寵物學校</a> v4.11.2</section> -->
 
 <!-- Analytics -->
 <!-- Analytics -->
@@ -68,37 +68,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
   <section class="menu cid-rGsqBtahAB" once="menu" id="menu1-1a">
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg" style="height:80px">
+
+
+
+
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
         <div class="container">
-            <div class="navbar-brand" >
-                {{-- <span class="navbar-logo"> --}}
+            <div class="navbar-brand">
+                <span class="navbar-logo">
                     <a href="https://mobirise.com/extensions/petsm4/index.html">
                         <img src="{{ asset('img/logo2.png')}}" alt="Mobirise" title="" style="height: 3rem;">
                     </a>
-                    <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-5" href="https://mobirise.com/extensions/petsm4/index.html">星期三寵物學校</a></span>
-                {{-- </span> --}}
-
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-5" href="https://mobirise.com/extensions/petsm4/index.html">PetsM4</a></span>
             </div>
-            <div class="header-area">
-              <div class="main-header header-sticky">
-                <div class="container-fluid">
-                  <div class="menu-wrapper">
-                    <div class="main-menu d-none d-lg-block" >
-                        <nav>
-                            {{ menu('frontend','my_menu') }}
-                        </nav>
-                    </div>
-                  </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-              </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+                        <a class="nav-link link text-black display-4" href="https://mobirise.com/extensions/petsm4/index.html" aria-expanded="false">
+                            Home</a>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4" href="https://mobirise.com/" aria-expanded="false" data-toggle="dropdown-submenu">Live Demo</a><div class="dropdown-menu"><a class="text-black dropdown-item display-4" href="https://mobirise.com/extensions/petsm4/boardingdemo.html" aria-expanded="false">Pets Boarding Services</a><a class="text-black dropdown-item display-4" href="https://mobirise.com/extensions/petsm4/shopdemo.html" aria-expanded="false">Pets Toys and Food Shop</a><a class="text-black dropdown-item display-4" href="https://mobirise.com/extensions/petsm4/schooldemo.html" aria-expanded="false">Pets Training School</a></div></li>
+                    <li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4" href="https://mobirise.com/" data-toggle="dropdown-submenu" aria-expanded="false">
+                            Live Demo Blocks</a><div class="dropdown-menu"><a class="text-black dropdown-item display-4" href="https://mobirise.com/extensions/petsm4/features.html">Headers / Features / Content / Countdowns </a><a class="text-black dropdown-item display-4" href="https://mobirise.com/extensions/petsm4/team.html" aria-expanded="false">Countres / Accordions / Team / Testimonials </a><a class="text-black dropdown-item display-4" href="https://mobirise.com/extensions/petsm4/pricing.html" aria-expanded="false">Progress / Pricing / Info /
+Forms / Clients</a><a class="text-black dropdown-item display-4" href="https://mobirise.com/extensions/petsm4/shop.html" aria-expanded="false">Video / Slider / Shop / Maps / Footers </a></div></li></ul>
+
+                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary-outline display-4" href="http://my.mobirise.com/buy.php?p=81">BUY NOW</a></div>
             </div>
         </div>
     </nav>
 </section>
 
- <main>
-    @yield('content')
-</main>
+
 
     <div class="container-fluid">
         <div class="row justify-content-center">
