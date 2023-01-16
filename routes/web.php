@@ -36,5 +36,10 @@ Route::namespace ('App\Http\Controllers')->group(function () {;
     Route::get('/showphotos', 'SixController@showphoto');
     Route::get('/teams', 'TwoFiveController@team');
     Route::get('/addcart', 'EightController@addcart');
+<<<<<<< HEAD
     Route::post('/showphotos', 'SixController@contact');
+=======
+    Route::get('/shops', 'TwoFiveController@shop');
+
+>>>>>>> 97ef01f9463caf0bc12fac01e6b5191673413542
 });
