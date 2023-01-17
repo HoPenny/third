@@ -42,11 +42,8 @@ Route::namespace ('App\Http\Controllers')->group(function () {;
     Route::get('/stay', 'SixController@stay');
     Route::get('/teams', 'TwoFiveController@team');
     Route::get('/addcart', 'EightController@addcart');
-<<<<<<< HEAD
+
     // Route::post('/showphotos', 'SixController@contact');
     Route::get('/shops', 'TwoFiveController@shop');
 
-=======
-    Route::post('/showphotos', 'SixController@contact');
->>>>>>> fb1501c54a9a69ac4708d1a49b0196ef0f1cd861
 });
