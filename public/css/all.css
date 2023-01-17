@@ -1,0 +1,6 @@
+.circle-arrow-right:before {
+    content: '\f0a9';
+}
+.circle-arrow-left:before {
+    content: '\f0a8';
+}

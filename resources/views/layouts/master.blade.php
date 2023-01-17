@@ -90,13 +90,14 @@
 
 
   <section class="menu cid-rGsqBtahAB" once="menu" id="menu1-1a">
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg" style="height:80px">
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg" style="height:80px; ">
+      <img style="margin-left:30px; margin-top:20px;  margin-bottom: 80px" src="{{ asset('storage/'.setting('site.logo')) }}" alt="">
         <div class="container" >
             <div class="navbar-brand" >
                  <!-- <span class="navbar-logo"> -->
-                    <div class="preloader-img pere-text"     style="margin-right: 800px;width: 120px;height: 80px;">
-                      <img src="{{ asset('storage/'.setting('site.logo')) }}" alt="">
-                    </div>
+                    {{-- <div class="preloader-img pere-text"     style="margin-right: 800px;width: 120px;height: 80px;"> --}}
+                      {{-- <img src="{{ asset('storage/'.setting('site.logo')) }}" alt=""> --}}
+                    {{-- </div> --}}
 
             </div>
             <div class="header-area">
@@ -120,62 +121,18 @@
     @yield('content')
 </main>
 
-
     <div class="container-fluid">
         <div class="row justify-content-center">
 
-
-
-
-            <div class="col-lg-6 m-auto mbr-form" data-form-type="formoid">
-                <!--Formbuilder Form-->
-                <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler"
-                    data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true"
-                        value="rZSEQQn2cxIZriQ7g1eR2vf2NnM1rFTAP+TfKC+Gk1efUdS0nWbzGgLjuZdD8hCdXU4Drb1upI4PerhDL9HtNEyXqe4hTVSPhd817yWMyl08w/odNpB3k+5hr1zP9REo.3/IiFIEEbz+c+r0T/j8C2LmS5ukCj4Q72jpgSt+GwSHnRqKVSaXhNJ4X2GBVrXGWSRIoefEq/XertD46UEHaSQH47SI6qUuDq8JVoITe4xPnoRn1TPwCi9g/uyqOyXsC">
-                    <div class="form-row">
-                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling
-                            out
-                            the form!</div>
-                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...!
-                            some
-                            problem!</div>
-                    </div>
-                    <div class="dragArea form-row">
-                        <div class="col-lg-12 col-md-12 col-sm-12" style="transform: translateZ(0px);">
-                            <h4 class="mbr-semibold mbr-fonts-style display-7">PLANNING A TRAINING?
-                            </h4>
-                            <h5 class="mbr-bold pb-3 mbr-fonts-style display-2">Contact Us</h5>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="name">
-                            <input type="text" name="name" placeholder="Name" data-form-field="name"
-                                class="form-control display-7" value="" id="name-form2-3b">
-                        </div>
-                        <div data-for="email" class="col-lg-12 col-md-12 col-sm-12 form-group">
-                            <input type="email" name="email" placeholder="E-mail" data-form-field="email"
-                                class="form-control display-7" value="" id="email-form2-3b">
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="textarea">
-                            <textarea name="textarea" placeholder="Message" data-form-field="textarea" class="form-control display-7"
-                                id="textarea-form2-3b"></textarea>
-                        </div>
-                        <div class="col-auto"><button type="submit" class="btn btn-primary display-7">SEND</button>
-                        </div>
-                    </div>
-                </form>
-                <!--Formbuilder Form-->
-            </div>
-
-
-
             <div class="col-md-12 col-lg-6 my-auto img-col">
                 <div class="mbr-figure">
-                    <img src="{{ asset('img/01.png') }}" alt="Mobirise">
+                    <img style="margin-left: 500px;" src="{{ asset('img/01.png') }}" alt="Mobirise">
                 </div>
 
             </div>
         </div>
 
-    </div> --}}
+    </div>
     </section>
 
 
@@ -191,7 +148,9 @@
                     <div class="item-wrap pb-4">
                         <div class="icons-wrap">
                             <img src="{{ asset('img/logo24.png') }}" alt="Mobirise">
-                            <h2 class="title1 align-left p-0 mbr-bold mbr-fonts-style display-5">PetsM4</h2>
+                            <h2 class="title1 align-left p-0 mbr-bold mbr-fonts-style display-5">
+                              {{setting('site.title')}}
+                            </h2>
                         </div>
                     </div>
                     <div class="socicon-wrap">
@@ -207,7 +166,7 @@
 
                 <div class="col-md-6 col-lg-3">
 
-                    <h2 class="title align-left mbr-bold pb-2 mbr-fonts-style display-5">About</h2>
+                    <h2 class="title align-left mbr-bold pb-2 mbr-fonts-style display-5">{{__('About')}}</h2>
 
                     <div class="align-wrap align-left">
 

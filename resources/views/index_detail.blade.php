@@ -11,7 +11,7 @@
                     <div class="align-wrap align-left">
                         <div class="inline-wrap">
                             <div class="icon-wrap">
-                                <span class="mbr-iconfont mbrib-home"></span>
+                                {!!$detail[1]->content!!}
                                 <h3 class="mbr-fonts-style group-title mbr-black display-5">{{ __('Basic Offer') }}
                                 </h3>
                             </div>
@@ -43,7 +43,7 @@
                     <div class="align-wrap align-left">
                         <div class="inline-wrap">
                             <div class="icon-wrap">
-                                <span class="mbr-iconfont mbrib-star"></span>
+                                {!!$detail[0]->content!!}
                                 <h3 class="mbr-fonts-style group-title mbr-black display-5">{{ __('Premium Offer') }}
                                 </h3>
                             </div>
