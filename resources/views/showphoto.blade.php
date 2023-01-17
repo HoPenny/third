@@ -17,7 +17,6 @@
             </div>
         </div>
     </section>
-    @include('flash::message')
     <section class="header8 cid-rGsVh1oMup" id="video1-2e">
         <div class="container align-center">
 
@@ -122,7 +121,4 @@
             });
         }
     </script>
-
-
-
 @endsection
