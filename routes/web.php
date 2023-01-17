@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use TCG\Voyager\Facades\Voyager;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/tests', function () {
+    return view('test');
 });
 
 Route::middleware([
@@ -37,4 +42,6 @@ Route::namespace ('App\Http\Controllers')->group(function () {;
     Route::get('/teams', 'TwoFiveController@team');
     Route::get('/addcart', 'EightController@addcart');
     // Route::post('/showphotos', 'SixController@contact');
+    Route::get('/shops', 'TwoFiveController@shop');
+
 });

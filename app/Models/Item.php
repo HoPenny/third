@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use App\Models\Order;
+use App\Models\Cgy;
 use App\Models\Tag;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -11,13 +11,15 @@ class Item extends Model
 {
     use HasFactory;
 
+    public function cgy()
+    {
+        return $this->belongsTo(Cgy::class);
+
+    }
+
     public function tags()
     {
         return $this->belongsToMany(Tag::class);
-    }
-    public function Orders()
-    {
-        return $this->belongsToMany(Order::class);
     }
 
     public function getFirstPic()
@@ -28,18 +30,16 @@ class Item extends Model
         } else {
             return null;
         }
-
     }
-    // public function getPicsAttribute()
-    // {
-    //     $data = json_decode($this->pics, true);
-    // }
+
+    //計算屬性的示範
     public function getPicsArrayAttribute()
     {
+
         $data = json_decode($this->pics, true);
         return $data;
-
     }
+
     public function getTaxPriceAttribute()
     {
         return $this->price_new * 1.05;
