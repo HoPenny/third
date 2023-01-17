@@ -9,6 +9,7 @@
         <!-- End block parameters -->
         <div class="container-fluid">
             <div class="row justify-content-center">
+
                 <div class="col-md-12">
                     <h1 class="mbr-section-title mbr-bold pb-3 align-center mbr-fonts-style display-2">
                         {{ __('Pets Life Collection') }}</h1>

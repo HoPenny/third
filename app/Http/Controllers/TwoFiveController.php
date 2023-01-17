@@ -23,7 +23,7 @@ class TwoFiveController extends Controller
     {
         $slider = Element::where('page', 'demo')->where('position', 'slider')->first();
 
-        $items = Item::orderBy('sort', 'asc')->get();
+        $items = Item::orderBy('sort', 'asc')->limit(3)->get();
         $cgies = Cgy::get();
         // $images = Element::where('page', 'index')->where('position', 'images')->orderBy('id', 'asc')->get();
         $texts = Element::where('page', 'index')->where('position', 'shop')->orderBy('id', 'asc')->get();
