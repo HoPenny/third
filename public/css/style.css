@@ -433,9 +433,6 @@
 .is-builder .nav-dropdown.collapsing {
     transition: none !important;
 }
-<<<<<<< HEAD
-
-=======
 .preloader .preloader-img {
     position: absolute;
     top: 50%;
@@ -453,5 +450,4 @@
     -o-transition: 0.6s;
     transition: 0.6s;
 }
->>>>>>> 09
 /*# sourceMappingURL=style.css.map */
