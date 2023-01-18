@@ -238,7 +238,7 @@
                 <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler"
                     data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true"
                         value="gCmPNu6fJen+flhLjufigRL0Ut65QAgyydyucCdcB/k2FxT7UzlvzGi1pmJ3qbCUGsp3JAAfcL7EJCZSxq7oW9siHx8omkpAmIJBi1NK/XWYhj+83h6lU4L5tcCyBKuc.13yppxpng5ASZgxRMyemCCbKMPS9KsKNh4k7suiZjjscO7nUVneN4MD4VqUjWdYIFJyWHSsw7flxuNRgRjqmtTVkjh8y9qtmhKVw+yVKFZAzhuAyD9qO6slqO6Xgf61j">
-                    <h2 class="title align-left mbr-bold pb-2 mbr-fonts-style display-5">Newsletter</h2>
+                    <h2 class="title align-left mbr-bold pb-2 mbr-fonts-style display-5">{{__('Newsletter')}}</h2>
                     <div class="form-row">
                         <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for
                             filling out
@@ -253,7 +253,7 @@
                                 class="form-control display-7" value="" id="email-footer2-3a">
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12"><button type="submit"
-                                class="btn btn-primary display-4">SUBSCRIBE</button></div>
+                                class="btn btn-primary display-4">{{__('SUBSCRIBE')}}</button></div>
                     </div>
                 </form>
                 <!--Formbuilder Form-->

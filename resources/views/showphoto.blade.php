@@ -88,12 +88,14 @@
                         </div>
                         <a data-app-prevent-settings="" class="carousel-control carousel-control-prev" role="button"
                             data-slide="prev" href="#slider1-24">
-                            <span aria-hidden="true" class="left"></span>
-                            <span aria-hidden="true" class="mbri-left mbr-iconfont"></span>
+                            {!!$arrow[1]->content!!}
+                            {{-- <span aria-hidden="true" class="left"></span>
+                            <span aria-hidden="true" class="mbri-left mbr-iconfont"></span> --}}
                             <span class="sr-only">{{__('Previous')}}</span></a>
                             <a data-app-prevent-settings=""                       class="carousel-control carousel-control-next" role="button" data-slide="next" href="#slider1-24">
-                            <span aria-hidden="true" class="right"></span>
-                            <span aria-hidden="true" class="mbri-right mbr-iconfont"></span>
+                            {!!$arrow[0]->content!!}
+                            {{-- <span aria-hidden="true" class="right"></span>
+                            <span aria-hidden="true" class="mbri-right mbr-iconfont"></span> --}}
                             <span class="sr-only">{{__('Next')}}</span></a>
                     </div>
                 </div>

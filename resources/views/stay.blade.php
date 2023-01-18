@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row justify-content-center">
 
-                <div class="col-lg-8 col-md-8 pb-4">
+                {{-- <div class="col-lg-8 col-md-8 pb-4">
                     <h4 class="align-left mbr-bold mbr-fonts-style display-7">{{ __('PET
                                         ACTIVITIES') }}
                     </h4>
@@ -19,7 +19,7 @@
                 <div class="col-lg-4 col-md-4 btn-col pb-4">
                     <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4"
                             href="https://mobirise.co/">{{ __('VIEW ALL') }}<br></a></div>
-                </div>
+                </div> --}}
 
                 @foreach ($cards as $card)
                     <div class="col-lg-4 col-md-6">

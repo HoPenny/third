@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\FormRequest;
 use App\Models\Contact;
 use App\Models\Element;
+use App\Models\Item;
 use view;
 
 class SixController extends Controller
@@ -47,8 +48,9 @@ class SixController extends Controller
         $cards = Element::where('page', 'stay')->where('position', 'cards')->orderBy('sort', 'asc')->take(3)->get();
         $basic = Item::where('cgy_id', 1)->where('enabled', true)->orderBy('sort', 'asc')->take(4)->get();
         $premium = Item::where('cgy_id', 2)->where('enabled', true)->orderBy('sort', 'asc')->take(4)->get();
+        $detail = Element::where('page', 'index')->where('position', 'detail')->orderBy('sort', 'asc')->get();
 
-        return view('stay', compact('cards', 'basic', 'premium'));
+        return view('stay', compact('cards', 'basic', 'premium','detail'));
     }
 
 }
