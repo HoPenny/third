@@ -23,8 +23,9 @@ class NineController extends Controller
         $basic = Item::where('cgy_id', 1)->where('enabled', true)->orderBy('sort', 'asc')->take(4)->get();
         $premium = Item::where('cgy_id', 2)->where('enabled', true)->orderBy('sort', 'asc')->take(4)->get();
         $detail = Element::where('page', 'index')->where('position', 'detail')->orderBy('sort', 'asc')->get();
+        $icon = Element::where('page', 'index')->where('position', 'icon')->orderBy('sort', 'asc')->get();
 
-        return view('index', compact('petschool', 'images', 'shops', 'basic', 'premium', 'detail'));
+        return view('index', compact('petschool', 'images', 'shops', 'basic', 'premium', 'detail', 'icon'));
 
         // return view('index');
 

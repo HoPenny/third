@@ -60,6 +60,12 @@
     </script>
     @livewireStyles
     @yield('css')
+    <style>
+        .icon_m{
+            width:20px;
+            height:20px;
+        }
+    </style>
 </head>
 
 <!-- Analytics -->
@@ -160,7 +166,6 @@
                     <span class="mbr-iconfont socicon-twitter socicon"></span>
                     <span class="mbr-iconfont socicon-instagram socicon"></span>
                     <span class="mbr-iconfont socicon-youtube socicon"></span>
-
                 </div>
 
 
@@ -175,8 +180,9 @@
 
                     <div class="item-wrap">
                         <div class="icons-wrap pb-2">
-                            <span class="mbr-iconfont mbrib-clock"></span>
-                            <h3 class="icon-title mbr-regular mbr-fonts-style display-4">PO BOX Collins Street West
+                            {{-- <span class="mbr-iconfont mbrib-clock"></span> --}}
+                            {!!$icon[0]->content!!}
+                            <h3 class="icon-title mbr-regular mbr-fonts-style display-4">{{setting('site.address')}}
                             </h3>
                         </div>
                     </div>
@@ -184,9 +190,9 @@
                     <div class="item-wrap">
                         <div class="icons-wrap pb-2">
 
-                            <span class="mbr-iconfont mbrib-key"></span>
-
-                            <h3 class="icon-title align-left mbr-regular mbr-fonts-style display-4">+2342 5446 67
+                            {{-- <span class="mbr-iconfont mbrib-key"></span> --}}
+                            {!!$icon[1]->content!!}
+                            <h3 class="icon-title align-left mbr-regular mbr-fonts-style display-4">{{setting('site.phoneno')}}
                             </h3>
 
 
@@ -196,42 +202,15 @@
                     <div class="item-wrap">
                         <div class="icons-wrap pb-2">
 
-                            <span class="mbr-iconfont mbrib-pin"></span>
-
-                            <h3 class="icon-title align-left mbr-regular mbr-fonts-style display-4">Mon - Sun: 8AM
-                                - 8PM</h3>
-
+                            {{-- <span class="mbr-iconfont mbrib-pin"></span> --}}
+                            {!!$icon[2]->content!!}
+                            <h3 class="icon-title align-left mbr-regular mbr-fonts-style display-4">{{setting('site.hours')}}</h3>
                         </div>
-
-
                     </div>
                 </div>
-
             </div>
 
-
-            <div class="col-md-6 col-lg-3">
-
-
-                <h2 class="title mbr-bold align-left pb-2 mbr-fonts-style display-5">{{__('Quick Links')}}</h2>
-
-                <h3 class="links-title align-left pb-2 mbr-regular mbr-fonts-style display-4">Dog Boarding Services
-                </h3>
-
-                <h3 class="links-title align-left pb-2 mbr-regular mbr-fonts-style display-4">Cat Boarding Services
-                </h3>
-
-                <h3 class="links-title align-left pb-2 mbr-regular mbr-fonts-style display-4">Spa and Grooming
-                    Services</h3>
-
-
-
-
-
-            </div>
-
-
-
+            {{ menu('footer','my_footer') }}
 
             <div class="col-md-6 col-lg-3 mbr-form" data-form-type="formoid">
                 <!--Formbuilder Form-->
