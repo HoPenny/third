@@ -238,8 +238,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             <div class="col-md-6 col-lg-3 mbr-form" data-form-type="formoid">
                 <!--Formbuilder Form-->
+<<<<<<< HEAD
                 <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="gCmPNu6fJen+flhLjufigRL0Ut65QAgyydyucCdcB/k2FxT7UzlvzGi1pmJ3qbCUGsp3JAAfcL7EJCZSxq7oW9siHx8omkpAmIJBi1NK/XWYhj+83h6lU4L5tcCyBKuc.13yppxpng5ASZgxRMyemCCbKMPS9KsKNh4k7suiZjjscO7nUVneN4MD4VqUjWdYIFJyWHSsw7flxuNRgRjqmtTVkjh8y9qtmhKVw+yVKFZAzhuAyD9qO6slqO6Xgf61j">
                     <h2 class="title align-left mbr-bold pb-2 mbr-fonts-style display-5">Newsletter</h2>
+=======
+                <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler"
+                    data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true"
+                        value="gCmPNu6fJen+flhLjufigRL0Ut65QAgyydyucCdcB/k2FxT7UzlvzGi1pmJ3qbCUGsp3JAAfcL7EJCZSxq7oW9siHx8omkpAmIJBi1NK/XWYhj+83h6lU4L5tcCyBKuc.13yppxpng5ASZgxRMyemCCbKMPS9KsKNh4k7suiZjjscO7nUVneN4MD4VqUjWdYIFJyWHSsw7flxuNRgRjqmtTVkjh8y9qtmhKVw+yVKFZAzhuAyD9qO6slqO6Xgf61j">
+                    <h2 class="title align-left mbr-bold pb-2 mbr-fonts-style display-5">{{__('Newsletter')}}</h2>
+>>>>>>> 7dc886357828317d6a321664ef20d6f30f14be60
                     <div class="form-row">
                         <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out
                             the form!</div>
@@ -250,7 +257,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="email">
                             <input type="email" name="email" placeholder="Your email" data-form-field="email" class="form-control display-7" value="" id="email-footer2-3a">
                         </div>
+<<<<<<< HEAD
                         <div class="col-lg-12 col-md-12 col-sm-12"><button type="submit" class="btn btn-primary display-4">SUBSCRIBE</button></div>
+=======
+                        <div class="col-lg-12 col-md-12 col-sm-12"><button type="submit"
+                                class="btn btn-primary display-4">{{__('SUBSCRIBE')}}</button></div>
+>>>>>>> 7dc886357828317d6a321664ef20d6f30f14be60
                     </div>
                 </form>
                 <!--Formbuilder Form-->
