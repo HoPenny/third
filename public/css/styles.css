@@ -429,6 +429,9 @@
 .socicon-instagram:before {
     content: '\e057';
 }
+.fa-facebook-f:before {
+    content: '\f39e';
+}
 .socicon-battlenet:before {
     content: '\e083';
 }

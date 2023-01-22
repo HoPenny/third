@@ -48,13 +48,7 @@
 
             <div class="card col-12 col-md-6 col-lg-3">
                 <div class="card-wrapper align-left card1 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208" style="">
-                        <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none" class="" style="" fill-opacity="1"></rect>
-                        <g class="currentLayer" style="">
-                            <title>Layer 1</title>
-                            <path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z" id="svg_1" class="" transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
-                        </g>
-                    </svg>
+
 
                      <div class="card-img" >
                         {!!$shops[0]->content!!}
@@ -62,7 +56,7 @@
                     <div class="card-box">
                         <h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">{{$shops[0]->title}}</h4>
                         <p class="mbr-text pb-4 mbr-fonts-style display-4">{{$shops[0]->subtitle}}</p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="{{url('/stay')}}" class="text-black">
+                        <h5 class="mbr-semibold mbr-fonts-style display-4"><a href="{{url('/stay')}}" class="text-black">
                                 {{__('VIEW MORE')}}</a></h5>
                     </div>
 
@@ -70,13 +64,7 @@
             </div>
             <div class="card col-12 col-md-6 col-lg-3">
                 <div class="card-wrapper  align-left card2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208" style="">
-                        <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none" class="" style="" fill-opacity="1"></rect>
-                        <g class="currentLayer" style="">
-                            <title>Layer 1</title>
-                            <path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z" id="svg_1" class="" transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
-                        </g>
-                    </svg>
+
                     <div class="card-img">
                         {!!$shops[1]->content!!}
                     </div>
@@ -85,20 +73,14 @@
                             {{$shops[1]->title}}</h4>
                         <p class="mbr-text pb-4 mbr-fonts-style display-4">
                             {{$shops[1]->subtitle}} </p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="{{url('/shops')}}" class="text-black">
+                        <h5 class="mbr-semibold mbr-fonts-style display-4"><a href="{{url('/shops')}}" class="text-black">
                                 {{__('VIEW MORE')}}</a></h5>
                     </div>
                 </div>
             </div>
             <div class="card col-12 col-md-6 col-lg-3">
                 <div class="card-wrapper  align-left card3 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208" style="">
-                        <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none" class="" style="" fill-opacity="1"></rect>
-                        <g class="currentLayer" style="">
-                            <title>Layer 1</title>
-                            <path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z" id="svg_1" class="" transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
-                        </g>
-                    </svg>
+
                     <div class="card-img">
                         {!!$shops[2]->content!!}
                     </div>
@@ -107,20 +89,14 @@
                             {{$shops[2]->title}}</h4>
                         <p class="mbr-text pb-4 mbr-fonts-style display-4">
                             {{$shops[2]->subtitle}} </p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="{{url('/shops')}}" class="text-black">
+                        <h5 class="mbr-semibold mbr-fonts-style display-4"><a href="{{url(asset('/shops'))}}" class="text-black">
                                 {{__('VIEW MORE')}}</a></h5>
                     </div>
                 </div>
             </div>
             <div class="card col-12 col-md-6 col-lg-3">
                 <div class="card-wrapper  align-left card4 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="269.19780227841716" height="147.43955898849208" style="">
-                        <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="transparent" stroke="none" class="" style="" fill-opacity="1"></rect>
-                        <g class="currentLayer" style="">
-                            <title>Layer 1</title>
-                            <path fill="white" fill-opacity="1" stroke="none" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M-110.40659359291077,50.950556279754636 C-110.40659359291077,-2.4372237202453633 -10.614843592910766,-81.94505372024535 88.16483640708924,-81.94505372024535 C186.94450640708922,-81.94505372024535 266.9560464070892,-38.70095372024536 266.9560464070892,14.686816279754638 C266.9560464070892,68.07458627975464 186.94450640708922,111.31868627975464 88.16483640708924,111.31868627975464 C-10.614843592910766,111.31868627975464 -110.40659359291077,104.33832627975464 -110.40659359291077,50.950556279754636 z" id="svg_1" class="" transform="rotate(-4.22603702545166 78.27473449707026,14.686810493469203) "></path>
-                        </g>
-                    </svg>
+
                     <div class="card-img">
                         {!!$shops[3]->content!!}
                     </div>
@@ -128,7 +104,7 @@
                         <h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">{{$shops[3]->title}}</h4>
                         <p class="mbr-text pb-4 mbr-fonts-style display-4">
                             {{$shops[3]->subtitle}} </p>
-                        <h5 class="link mbr-semibold mbr-fonts-style display-4"><a href="https://mobirise.com/extensions/petsm4/schooldemo.html#" class="text-black">
+                        <h5 class="mbr-semibold mbr-fonts-style display-4"><a href="https://mobirise.com/extensions/petsm4/schooldemo.html#" class="text-black">
                                 {{__('VIEW MORE')}}</a></h5>
                     </div>
                 </div>

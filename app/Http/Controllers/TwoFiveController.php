@@ -15,20 +15,22 @@ class TwoFiveController extends Controller
         $counters = Article::where('author_id', 1)->orderBy('sort', 'asc')->take(4)->get();
         $teams = Article::where('author_id', 2)->orderBy('sort', 'asc')->take(3)->get();
         $images = Element::where('page', 'index')->where('position', 'images')->orderBy('id', 'asc')->get();
+        $icon = Element::where('page', 'index')->where('position', 'icon')->orderBy('sort', 'asc')->get();
 
-        return view('team', compact('slider', 'counters', 'teams', 'images'));
+        return view('team', compact('slider', 'counters', 'teams', 'images', 'icon'));
     }
 
     public function shop()
     {
         $slider = Element::where('page', 'demo')->where('position', 'slider')->first();
 
-        $items = Item::orderBy('sort', 'asc')->limit(3)->get();
+        $items = Item::orderBy('sort', 'asc')->limit(9)->get();
         $cgies = Cgy::get();
         // $images = Element::where('page', 'index')->where('position', 'images')->orderBy('id', 'asc')->get();
         $texts = Element::where('page', 'index')->where('position', 'shop')->orderBy('id', 'asc')->get();
         $texts_c = Element::where('page', 'index')->where('position', 'shop_method')->orderBy('id', 'asc')->get();
+        $icon = Element::where('page', 'index')->where('position', 'icon')->orderBy('sort', 'asc')->get();
 
-        return view('shop', compact('slider', 'items', 'cgies', 'texts', 'texts_c'));
+        return view('shop', compact('slider', 'items', 'cgies', 'texts', 'texts_c', 'icon'));
     }
 }

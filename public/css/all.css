@@ -4,3 +4,36 @@
 .circle-arrow-left:before {
     content: '\f0a8';
 }
+.fa-eye-slash:before {
+    content: '\f070';
+}
+
+.fa-facebook:before {
+    content: '\f09a';
+}
+
+.fa-facebook-f:before {
+    content: '\f39e';
+}
+.fa-instagram:before:before {
+    content: '\f09a';
+}
+
+.fa-instagram-f:before {
+    content: '\f16d';
+}
+
+.fa-instagram-messenger:before {
+    content: '\f39f';
+}
+
+.fa-instagram-square:before {
+    content: '\f082';
+}
+.fa-twitter:before {
+    content: '\f099';
+}
+
+.fa-twitter-square:before {
+    content: '\f081';
+}

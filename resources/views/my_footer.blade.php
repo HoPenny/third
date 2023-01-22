@@ -4,13 +4,13 @@
         <div class="single-footer-caption mb-50">
         <div class="footer-tittle">
         {{-- <li><a href="{{ url( $item->link() ) }}"> --}}
-          <h4>{{ $item->title }} </h4>
+          <h2 class="title align-left mbr-bold pb-2 mbr-fonts-style display-5">{{ $item->title }} </h2>
 
             @if (isset($item->children) && count($item->children) > 0)
                 <ul>
                     @foreach ($item->children as $subitem)
                         <li><a href="{{ url( $subitem->link() ) }}">
-                          <h6>{{ $subitem->title }}</h6> </a></li>
+                          <h6 style="color:black">{{ $subitem->title }}</h6> </a></li>
                     @endforeach
                 </ul>
             @endif

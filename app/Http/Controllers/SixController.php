@@ -16,8 +16,9 @@ class SixController extends Controller
         $videos = Element::where('page', 'showphoto')->where('position', 'videos')->orderBy('sort', 'asc')->get();
         $silders = Element::where('page', 'showphoto')->where('position', 'silders')->orderBy('sort', 'asc')->get();
         $arrow = Element::where('page', 'showphoto')->where('position', 'arrow')->orderBy('sort', 'asc')->get();
+        $icon = Element::where('page', 'index')->where('position', 'icon')->orderBy('sort', 'asc')->get();
 
-        return view('showphoto', compact('videos', 'silders', 'arrow'));
+        return view('showphoto', compact('videos', 'silders', 'arrow', 'icon'));
     }
 
     //儲存聯絡單
@@ -47,10 +48,11 @@ class SixController extends Controller
     {
         $cards = Element::where('page', 'stay')->where('position', 'cards')->orderBy('sort', 'asc')->take(3)->get();
         $basic = Item::where('cgy_id', 1)->where('enabled', true)->orderBy('sort', 'asc')->take(4)->get();
-        $premium = Item::where('cgy_id', 2)->where('enabled', true)->orderBy('sort', 'asc')->take(4)->get();
+        $premium = Item::where('cgy_id', 4)->where('enabled', true)->orderBy('sort', 'asc')->take(4)->get();
         $detail = Element::where('page', 'index')->where('position', 'detail')->orderBy('sort', 'asc')->get();
+        $icon = Element::where('page', 'index')->where('position', 'icon')->orderBy('sort', 'asc')->get();
 
-        return view('stay', compact('cards', 'basic', 'premium','detail'));
+        return view('stay', compact('cards', 'basic', 'premium', 'detail', 'icon'));
     }
 
 }
