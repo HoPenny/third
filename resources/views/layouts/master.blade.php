@@ -106,13 +106,7 @@
         <img style="margin-left:30px; margin-top:20px;  margin-bottom: 80px;"
             src="{{ asset('storage/' . setting('site.logo')) }}" alt="">
         <div>
-            <div class="navbar-brand">
-                <!-- <span class="navbar-logo"> -->
-                {{-- <div class="preloader-img pere-text"     style="margin-right: 800px;width: 120px;height: 80px;"> --}}
-                {{-- <img src="{{ asset('storage/'.setting('site.logo')) }}" alt=""> --}}
-                {{-- </div> --}}
 
-            </div>
             <div class="header-area">
                 <div class="main-header header-sticky">
                     <div class="container-fluid">
@@ -134,7 +128,7 @@
     @yield('content')
 </main>
 
-<div class="container-fluid">
+{{-- <div class="container-fluid">
     <div class="row justify-content-center">
 
         <div class="col-md-12 col-lg-6 my-auto img-col">
@@ -145,7 +139,7 @@
         </div>
     </div>
 
-</div>
+</div> --}}
 </section>
 
 
@@ -221,7 +215,7 @@
 
             <div class="col-md-6 col-lg-3 mbr-form" data-form-type="formoid">
                 <!--Formbuilder Form-->
-                <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler"
+                <form action="{{url('/')}}" method="POST" class="mbr-form form-with-styler"
                     data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true"
                         value="gCmPNu6fJen+flhLjufigRL0Ut65QAgyydyucCdcB/k2FxT7UzlvzGi1pmJ3qbCUGsp3JAAfcL7EJCZSxq7oW9siHx8omkpAmIJBi1NK/XWYhj+83h6lU4L5tcCyBKuc.13yppxpng5ASZgxRMyemCCbKMPS9KsKNh4k7suiZjjscO7nUVneN4MD4VqUjWdYIFJyWHSsw7flxuNRgRjqmtTVkjh8y9qtmhKVw+yVKFZAzhuAyD9qO6slqO6Xgf61j">
                     <h2 class="title align-left mbr-bold pb-2 mbr-fonts-style display-5">{{__('Newsletter')}}</h2>
@@ -291,8 +285,8 @@
     -->
     $('#flash-overlay-modal').modal();
 
-<!-- Flash Message 3秒之後消失，非必須 -->
-$('div.alert').delay(3000).fadeOut(350);
+    <!-- Flash Message 3秒之後消失，非必須 -->
+    $('div.alert').delay(5000).fadeOut(350);
 </script>
 
 </body>

@@ -38,14 +38,16 @@ Route::group(['prefix' => 'admin'], function () {
 Route::namespace ('App\Http\Controllers')->group(function () {
 
     Route::get('/', 'NineController@index');
-
-    Route::post('/contant', 'SixController@contact');
+    Route::post('/contacts', 'SixController@storecontact');
+    Route::get('/contact', 'SixController@contact');
     Route::get('/showphotos', 'SixController@showphoto');
     Route::get('/stay', 'SixController@stay');
     Route::get('/teams', 'TwoFiveController@team');
     Route::get('/addcart', 'EightController@addcart');
 
-    // Route::post('/showphotos', 'SixController@contact');
-    Route::get('/shops', 'TwoFiveController@shop');
+    Route::get('/shops/{cgy}', 'TwoFiveController@shop');
 
 });
+// Route::get('/contacts', function () {
+//     dd('聯絡我');
+// });

@@ -119,7 +119,7 @@
             player = new YT.Player('ytplayer', {
                 height: '100%',
                 width: '100%',
-                videoId: '{{ $videos[0]->video }}'
+                 videoId: '{{ $videos[0]->video }}'
             });
         }
     </script>

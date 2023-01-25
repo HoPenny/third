@@ -29,7 +29,7 @@
                     </div>
                 </div>
 
-                <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="https://mobirise.co/">{{__('VIEW MORE')}}</a> <a class="btn btn-md btn-primary-outline display-4" href="https://mobirise.co/">{{__('BOOK NOW')}}</a></div>
+                <div class="align-left mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="{{url('/stay')}}">{{__('VIEW MORE')}}</a> <a class="btn btn-md btn-primary-outline display-4" href="{{url('/contact')}}">{{__('BOOK NOW')}}</a></div>
 
             </div>
             <div class="col-md-12 col-lg-7 img-col">
@@ -73,7 +73,7 @@
                             {{$shops[1]->title}}</h4>
                         <p class="mbr-text pb-4 mbr-fonts-style display-4">
                             {{$shops[1]->subtitle}} </p>
-                        <h5 class="mbr-semibold mbr-fonts-style display-4"><a href="{{url('/shops')}}" class="text-black">
+                        <h5 class="mbr-semibold mbr-fonts-style display-4"><a href="{{url('/shops/2')}}" class="text-black">
                                 {{__('VIEW MORE')}}</a></h5>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                             {{$shops[2]->title}}</h4>
                         <p class="mbr-text pb-4 mbr-fonts-style display-4">
                             {{$shops[2]->subtitle}} </p>
-                        <h5 class="mbr-semibold mbr-fonts-style display-4"><a href="{{url(asset('/shops'))}}" class="text-black">
+                        <h5 class="mbr-semibold mbr-fonts-style display-4"><a href="{{url(asset('/showphotos'))}}" class="text-black">
                                 {{__('VIEW MORE')}}</a></h5>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                         <h4 class="card-title pb-2 mbr-bold mbr-fonts-style display-5">{{$shops[3]->title}}</h4>
                         <p class="mbr-text pb-4 mbr-fonts-style display-4">
                             {{$shops[3]->subtitle}} </p>
-                        <h5 class="mbr-semibold mbr-fonts-style display-4"><a href="https://mobirise.com/extensions/petsm4/schooldemo.html#" class="text-black">
+                        <h5 class="mbr-semibold mbr-fonts-style display-4"><a href="{{url('/contact')}}" class="text-black">
                                 {{__('VIEW MORE')}}</a></h5>
                     </div>
                 </div>
@@ -115,10 +115,6 @@
 
 </section>
 
-
-
-
-{{-- @include('index_detail') --}}
 
 <section class="carouse1 slide testimonials-slider cid-rGtBR1utsO" data-interval="false" id="testimonials-slider1-3c">
 

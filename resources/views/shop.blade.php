@@ -1,34 +1,26 @@
-{{-- 首頁 --}}
-@extends('layouts.master')
-@section('title', '首頁')
 
+@extends('layouts.master')
+@section('title', '商店')
 @section('content')
 
     <section class="cid-rGsOi1S1gW" id="clients1-1g">
-        <!-- Block parameters controls (Blue "Gear" panel) -->
-
-        <!-- End block parameters -->
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-md-12">
                     <h1 class="mbr-section-title mbr-bold pb-3 align-center mbr-fonts-style display-2">
-                        {{-- {{ __('Pets Life Collection') }}</h1> --}}
                 </div>
             </div>
         </div>
     </section>
     <section class="features1 cid-rGtDy5Bq7v" id="features3-3t">
-        <div class="container">
+        <div class="">
             <div class="row">
                 <div class="col-md-12 col-lg-7 img-col">
                     <div class="mbr-figure">
                         <img src="{{ Voyager::image($slider->pic) }}" alt="Mobirise">
                     </div>
                 </div>
-
-
                 <div class="col-12 col-md-12 col-lg-12">
-                    {{-- <h2 class="align-center pb-5 mbr-bold mbr-fonts-style display-2">Our Goods Features</h2> --}}
                 </div>
 
                 <div class="card col-12 col-md-6 col-lg-3">
@@ -84,15 +76,15 @@
 
                     <div class="card-img">
                         {{-- <span class="mbr-iconfont mbrib-globe"></span> --}}
-                        {!!$texts[0]->content!!}
+                        {!! $texts[0]->content !!}
                     </div>
                     <div class="card-box m-auto">
 
                         <h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">
                             {{ $texts[0]->title }}</h4>
 
-                        <h5 class="link align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a
-                                href="https://mobirise.com/extensions/petsm4/shopdemo.html#" class="text-white">
+                        <h5 class="align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a
+                                href="{{ url('/stay') }}" class="text-white">
                                 {{ __('VIEW MORE') }}</a></h5>
                     </div>
                 </div>
@@ -133,16 +125,14 @@
                                 filter=""></path>
                         </g>
                     </svg>
-                    {{-- 動態文字區 --}}
                     <div class="card-img">
-                        {{-- <span class="mbr-iconfont mbrib-github"></span> --}}
-                         {!!$texts[1]->content!!}
+                        {!! $texts[1]->content !!}
                     </div>
                     <div class="card-box m-auto">
                         <h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">
                             {{ $texts[1]->title }}</h4>
-                        <h5 class="link align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a
-                                href="https://mobirise.com/extensions/petsm4/shopdemo.html#" class="text-white">
+                        <h5 class="align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a
+                                href="{{ url('/shops/2') }}" class="text-white">
                                 {{ __('VIEW MORE') }}</a></h5>
                     </div>
                 </div>
@@ -203,14 +193,13 @@
 
 
                     <div class="card-img">
-                        {{-- <span class="mbr-iconfont mbrib-apple"></span> --}}
-                         {!!$texts[2]->content!!}
+                        {!! $texts[2]->content !!}
                     </div>
                     <div class="card-box m-auto">
                         <h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">
                             {{ $texts[2]->title }}</h4>
-                        <h5 class="link align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a
-                                href="https://mobirise.com/extensions/petsm4/shopdemo.html#" class="text-white">
+                        <h5 class="align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a
+                                href="{{ url('/showphotos') }}" class="text-white">
                                 {{ __('VIEW MORE') }}</a></h5>
                     </div>
                 </div>
@@ -269,14 +258,13 @@
 
 
                     <div class="card-img">
-                        {{-- <span class="mbr-iconfont mbrib-globe"></span> --}}
-                         {!!$texts[3]->content!!}
+                        {!! $texts[3]->content !!}
                     </div>
                     <div class="card-box m-auto">
                         <h4 class="card-title align-center pb-3 mbr-white mbr-bold mbr-fonts-style display-5">
                             {{ $texts[3]->title }}</h4>
-                        <h5 class="link align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a
-                                href="https://mobirise.com/extensions/petsm4/shopdemo.html#" class="text-white">
+                        <h5 class="align-center mbr-semibold mbr-white mbr-fonts-style display-4"><a
+                                href="{{ url('/contact') }}" class="text-white">
                                 {{ __('VIEW MORE') }}</a></h5>
                     </div>
 
@@ -286,234 +274,110 @@
         </div>
 
     </section>
+{{-- 商品明細 --}}
+<section class="mbr-gallery cid-rGtDhIxNyM" id="shop1-3n">
+  <div class="container">
+      <div class="mbr-shop" show-sidebar="" card-buttons="">
+          <!-- Shop Gallery -->
+          <div class="row mbr-shop__row col-md-12">
+              <div class="wrapper-shop-items col-xl-9">
+                  <div class="mbr-gallery-row">
+                      <div>
+                          <div class="shop-items">
+                            @foreach ($items as $item)
+                              <div class="mbr-gallery-item" data-tags="Awesome" data-slide-to="0"
+                                  data-seller="false" data-price="80" data-oldprice="160">
+                                  <div class="item_overlay" data-toggle="modal"></div>
+                                  <div class="galleryItem" data-toggle="modal">
+                                      <div class="style_overlay"></div>
+                                      <div class="img_wraper"><img
+                                              src="{{ Voyager::image($item->getFirstPic()) }}"
+                                              alt="" title=""></div><span
+                                          class="onsale mbr-fonts-style display-7" data-onsale="false"
+                                          style="display: none;">-50%</span>
+                                      <div class="sidebar_wraper">
+                                          <h4 class="item-title mbr-fonts-style mbr-text display-5">{{ $item->title }}</h4>
+                                          <div class="price-block"><span
+                                                  class="shop-item-price mbr-fonts-style display-5">${{ $item->price_new }}</span><span
+                                                  class="oldprice mbr-fonts-style display-7"
+                                                  style="display: none;">{{ $item->price_old }}</span></div>
+                                          <div class="card-description">Casual shoes (contact us for sizing)<br><br>
+                                              <ul>
+                                                  <li>Lightweight textured fabric</li>
+                                                  <li>Rounded v-neckline</li>
+                                                  <li>Pom pom trims</li>
+                                                  <li>Regular fit – true to size</li>
+                                              </ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis.
+                                              Suspendisse convallis iaculis tortor, quis mattis lectus rutrum
+                                              a.<br><br>Product code: <strong>385DDF5p</strong>
+                                          </div>
+                                          <div class="mbr-section-btn" buttons="0" style="display: none;"><a
+                                                  href="url(/shops)" class="btn btn-primary display-7">{{__('Buy
+                                                  now')}}!</a></div>
+                                      </div>
+                                  </div>
+                              </div>
+                              @endforeach
 
-    {{-- 商品區 --}}
-    <section class="mbr-gallery cid-rGtDhIxNyM" id="shop1-3n">
-        <div class="container">
-            <div class="mbr-shop" show-sidebar="" card-buttons="">
+                          </div>
+                      </div>
+                      <div class="clearfix"></div>
+                  </div>
+              </div>
+              <div class="col-xl-3 sidebar">
+                  <div class="sidebar-background"></div>
+                  <div class="sidebar-block container range-slider">
+                      {{-- <h4 class="sidebar-title mbr-fonts-style mbr-text display-7">{{__('Price Range')}}</h4> --}}
+                      {{-- <div class="filter-cost" onselectstart="return false">
+                          <div class="price-controls"><label class="min-price"><input class="min-input"
+                                      type="text" value="800" name="min" disabled=""></label><label
+                                  class="max-price"><input class="max-input" type="text" value="2600"
+                                      name="max" disabled=""></label></div>
+                          <div class="range-controls">
+                              <div class="scale">
+                                  <div class="bar"></div>
+                              </div>
+                              <div class="toggle min-toggle"></div>
+                              <div class="toggle max-toggle"></div>
+                          </div>
+                      </div> --}}
+                      {{-- <div class="price-range mbr-section-btn" buttons="0"><a class="btn btn-sm btn-primary"
+                              href="{{url('/shops')}}">{{__('Filter')}}</a></div>
+                      <div class="price-range-reset mbr-section-btn" buttons="0"><a
+                              class="btn btn-sm btn-secondary"
+                              href="{{url('/shops')}}">{{__('Show all')}}</a></div> --}}
+                  </div>
+                  <div class="sidebar-block container sidebar-categories">
+                      <h4 class="sidebar-title mbr-fonts-style mbr-text display-7">{{__('Cgy')}}</h4>
+                      <div class="categories col-md-12">
+                          <div class="categories-titles">
+                              <!-- Filter -->
+                              <div class="mbr-gallery-filter mbr-shop-filter container gallery-filter-active">
+                                  <ul buttons="0">
+                                      <li class="mbr-gallery-filter-all active display-7">{{__('All')}}</li>
+                                      @foreach ($cgies as $cgy)
 
-                <!-- Shop Gallery -->
-                <div class="row mbr-shop__row col-md-12">
-                    <div class="wrapper-shop-items col-xl-9">
-                        <div class="mbr-gallery-row">
-                            <div>
-                                {{-- 商品排版區塊 --}}
-                                <div class="shop-items">
+                                          <li><a href="{{asset('/shops/' . $cgy->id)}}"> <p class="display-7">{{ $cgy->title}}({{$cgy->items()->count()}})</p>
+                                          <p></p></a></li>
+                                      @endforeach
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div><!-- Lightbox -->
+          <div class="shopItemsModal_wraper" style="z-index: 100;">
+              <div class="shopItemsModalBg"></div>
+              <div class="shopItemsModal row">
+                  <div class="col-md-6 image-modal"></div>
+                  <div class="col-md-6 text-modal"></div>
+                  <div class="closeModal">
+                      <div class="close-modal-wrapper"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
-                                    @foreach ($items as $item)
-                                        <div class="mbr-gallery-item" data-tags="{{ $item->cgy_id }}"
-                                            data-slide-to="{{ $loop->index }}" data-seller="false" data-price="80"
-                                            data-oldprice="160">
-
-                                            <div class="item_overlay" data-toggle="modal"></div>
-                                            <div class="galleryItem" data-toggle="modal">
-
-                                                <div class="style_overlay"></div>
-                                                <div class="img_wraper">
-                                                    <img src="{{ Voyager::image($item->getFirstPic()) }}" alt=""
-                                                        title="" width="100%">
-                                                </div>
-                                                <span class="onsale mbr-fonts-style display-7" data-onsale="false"
-                                                    style="display: none;">-50%</span>
-
-                                                <div class="sidebar_wraper">
-                                                    <h4 class="item-title mbr-fonts-style mbr-text display-5">
-                                                        {{ $item->title }}</h4>
-                                                    <div class="price-block"><span
-                                                            class="shop-item-price mbr-fonts-style display-5">${{ $item->price_new }}</span>
-                                                        {{-- 點擊後出現的區塊 --}}
-                                                        <span class="oldprice mbr-fonts-style display-7"
-                                                            style="display: none;">$160</span>
-                                                    </div>
-                                                    <div class="card-description">Casual shoes (contact us for
-                                                        sizing)<br><br>
-                                                        <ul>
-                                                            <li>Lightweight textured fabric</li>
-                                                            <li>Rounded v-neckline</li>
-                                                            <li>Pom pom trims</li>
-                                                            <li>Regular fit – true to size</li>
-                                                        </ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis.
-                                                        Suspendisse convallis
-                                                        iaculis tortor, quis mattis lectus rutrum a.<br><br>Product code:
-                                                        <strong>385DDF5p</strong>
-                                                    </div>
-                                                    <div class="mbr-section-btn" buttons="0" style="display: none;"><a
-                                                            href="https://mobirise.com/"
-                                                            class="btn btn-primary display-7">Buy now!</a></div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    @endforeach
-                                </div>
-
-                            </div>
-
-
-                            {{-- 分類側邊欄 --}}
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 sidebar">
-                        <div class="sidebar-background"></div>
-                        <div class="sidebar-block container range-slider">
-                            <div class="sidebar-block container sidebar-categories">
-                                <h1 class="sidebar-title mbr-fonts-style mbr-text display-7"
-                                    style="color: rgb(122, 186, 89)">分類</h1>
-                                <div class="categories col-md-12">
-                                    <div class="categories-titles">
-                                        <!-- Filter -->
-                                        <div class="mbr-gallery-filter mbr-shop-filter container gallery-filter-active">
-                                            <ul buttons="0">
-                                                <li class="mbr-gallery-filter-all active display-7">全部</li>
-
-                                                @foreach ($cgies as $item)
-                                                    <li class="display-7">{{ $item->title }}</li>
-                                                @endforeach
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-                    <!-- Lightbox -->
-                    <div class="shopItemsModal_wraper" style="z-index: 100;">
-                        <div class="shopItemsModalBg"></div>
-                        <div class="shopItemsModal row">
-                            <div class="col-md-6 image-modal"></div>
-                            <div class="col-md-6 text-modal"></div>
-                            <div class="closeModal">
-                                <div class="close-modal-wrapper"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            {{-- <section class="tabs cid-rGtLYTvqHP" id="pricing-tables1-41">
-
-                <div class="container d-flex flex-column">
-
-                    <div class="tab-content">
-                        <div id="tab1" class="tab-pane in active" role="tabpanel">
-                            <div class="row">
-
-                                <div class="plan col-12 justify-content-center col-lg-4">
-                                    <div class="plan-header card1">
-                                        <h3 class="plan-title mbr-black mbr-bold pb-1 mbr-fonts-style display-7">喵喵有驚喜</h3>
-                                        <h4 class="month mbr-black mbr-bold mbr-fonts-style display-2">Lite</h4>
-
-                                        <span class="mbr-iconfont pt-3 pb-2 icon mbrib-home"></span>
-
-                                    </div>
-
-                                    <div class="plan-body card1">
-                                        <div class="plan-list">
-
-                                            @foreach ($texts as $text)
-                                                <div class="plan-item d-flex justify-content-center">
-                                                    <span class="mbr-iconfont mbrib-success"
-                                                        style="color: rgb(122, 186, 89); fill: rgb(122, 186, 89);"></span>
-                                                    <p class="mbr-fonts-style display-4">{{ $text->title }}
-                                                    </p>
-                                                </div>
-                                            @endforeach
-                                        </div>
-
-                                        <div class="plan-price">
-                                            <span class="price-value mbr-bold mbr-fonts-style display-5">
-                                                $
-                                            </span>
-                                            <span class="price-figure mbr-bold mbr-fonts-style display-2">50</span>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="plan col-12 center-card justify-content-center col-lg-4">
-                                    <div class="plan-header card2">
-                                        <h3 class="plan-title2 mbr-black mbr-bold pb-1 mbr-fonts-style display-7">喵喵好服務
-                                        </h3>
-                                        <h4 class="month2 mbr-black mbr-bold mbr-fonts-style display-2">Basic</h4>
-
-                                        <span class="mbr-iconfont pt-3 pb-2 icon mbrib-home"></span>
-
-                                    </div>
-                                    <div class="plan-body card2">
-                                        <div class="plan-list">
-
-                                            @foreach ($texts_c as $text)
-                                                <div class="plan-item d-flex justify-content-center">
-                                                    <span class="mbr-iconfont mbrib-success"
-                                                        style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);"></span>
-                                                    <p class="item2 mbr-fonts-style display-4">{{ $text->title }}
-                                                    </p>
-                                                </div>
-                                            @endforeach
-
-
-                                        </div>
-                                        <div class="plan-price">
-                                            <span class="price-value2 mbr-bold mbr-fonts-style display-5">
-                                                $
-                                            </span>
-                                            <span class="price-figure2 mbr-bold mbr-fonts-style display-2">150</span>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="plan col-12 justify-content-center col-lg-4">
-                                    <div class="plan-header card1">
-                                        <h3 class="plan-title mbr-black mbr-bold pb-1 mbr-fonts-style display-7">喵喵難伺候</h3>
-                                        <h4 class="month mbr-black mbr-bold mbr-fonts-style display-2">Pro</h4>
-
-                                        <span class="mbr-iconfont pt-3 pb-2 icon mbrib-home"></span>
-
-                                    </div>
-                                    <div class="plan-body card1">
-                                        <div class="plan-list">
-
-                                            @foreach ($texts as $text)
-                                                <div class="plan-item d-flex justify-content-center">
-                                                    <span class="mbr-iconfont mbrib-success"
-                                                        style="color: rgb(122, 186, 89); fill: rgb(122, 186, 89);"></span>
-                                                    <p class="mbr-fonts-style display-4">{{ $text->title }}
-                                                    </p>
-                                                </div>
-                                            @endforeach
-
-                                        </div>
-                                        <div class="plan-price">
-                                            <span class="price-value mbr-bold mbr-fonts-style display-5">
-                                                $
-                                            </span>
-                                            <span class="price-figure mbr-bold mbr-fonts-style display-2">250</span>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </section> --}}
+</section>
