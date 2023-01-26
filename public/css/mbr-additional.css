@@ -1087,7 +1087,7 @@ section.lazy-placeholder:after {
     top: 0;
 }
 @media (min-width: 992px) {
-    .cid-rGsqBtahAB .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
+    .cid-rGsqBtahAB .navbar.collapsed.opened:not(.) .navbar-collapse {
         max-height: calc(98.5vh - 3rem);
     }
 }
@@ -13329,7 +13329,7 @@ section.lazy-placeholder:after {
         margin: auto 0;
     }
 }
-@media (min-width: 767px) {
+@media (min-width: 992px) {
     .cid-rGsOE1E5qe .content {
         padding: 0 2rem;
     }

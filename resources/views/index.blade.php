@@ -9,8 +9,7 @@
 @section('content')
 <section class="cid-rGsOE1E5qe" id="header1-1k">
 
-
-    <div class="container-fluid">
+    <div class="container-fluid" >
         <div class="row">
             <div class="col-md-12 content align-left py-4 col-lg-5 ">
 
@@ -33,7 +32,7 @@
 
             </div>
             <div class="col-md-12 col-lg-7 img-col">
-                <div class="mbr-figure">
+                <div class="mbr-figure" >
                     <img src="{{ asset('img/07.png')}}" alt="Mobirise">
                 </div>
 

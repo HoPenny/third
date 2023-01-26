@@ -102,11 +102,11 @@
 
 
 <section class="menu cid-rGsqBtahAB" once="menu" id="menu1-1a">
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg" style="height:100px; ">
-        <img style="margin-left:30px; margin-top:20px;  margin-bottom: 80px;"
+
+  <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg navbar-short"  style="height:100px; ">
+          <img style="margin-left:30px ;  margin-top:20px;  margin-bottom: 80px;"
             src="{{ asset('storage/' . setting('site.logo')) }}" alt="">
         <div>
-
             <div class="header-area">
                 <div class="main-header header-sticky">
                     <div class="container-fluid">
@@ -128,18 +128,7 @@
     @yield('content')
 </main>
 
-{{-- <div class="container-fluid">
-    <div class="row justify-content-center">
 
-        <div class="col-md-12 col-lg-6 my-auto img-col">
-            <div class="mbr-figure">
-                <img style="margin-left: 500px;" src="{{ asset('img/01.png') }}" alt="Mobirise">
-            </div>
-
-        </div>
-    </div>
-
-</div> --}}
 </section>
 
 
@@ -267,8 +256,7 @@
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('js/jquery-as-pie-progress.min.js') }}"></script>
 <script src="{{ asset('js/mbr-tabs.js') }}"></script>
-<script src="{{ asset('js/nav-dropdown.js') }}"></script>
-<script src="{{ asset('js/navbar-dropdown.js') }}"></script>
+<script src="{{ asset('js/mbr-switch-arrow.js') }}"></script>
 <script src="{{ asset('js/jquery.touch-swipe.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap-carousel-swipe.js') }}"></script>
 <script src="{{ asset('js/mbr-testimonials-slider.js') }}"></script>
@@ -278,10 +266,13 @@
 <script src="{{ asset('js/jquery.datetimepicker.full.js') }}"></script>
 <script src="{{ asset('js/mbr-popup-btns.js')}}"></script>
 <script src="{{ asset('js/script.js')}}"></script>
+<script src="{{ asset('js/jquery.countdown.min.js')}}"></script>
 <script src="{{ asset('js/player.min.js')}}"></script>
 <script src="{{ asset('js/formoid.min.js')}}"></script>
 <script src="{{ asset('js/vimeo_player.js')}}"></script>
 <script src="{{ asset('js/jquery.mb.ytplayer.min.js')}}"></script>
+<script src="{{ asset('js/nav-dropdown.js')}}"></script>
+<script src="{{ asset('js/navbar-dropdown.js')}}"></script>
 <script src="{{ asset('js/script(1).js')}}"></script>
 <script src="{{ asset('js/script(2).js')}}"></script>
 <script src="{{ asset('js/script(3).js')}}"></script>
