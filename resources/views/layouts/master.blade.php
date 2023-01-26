@@ -276,10 +276,18 @@
 <script src="{{ asset('js/jquery.formstyler.js') }}"></script>
 <script src="{{ asset('js/jquery.formstyler.min.js') }}"></script>
 <script src="{{ asset('js/jquery.datetimepicker.full.js') }}"></script>
-<script src="{{ asset('js/mbr-popup-btns.js') }}"></script>
-<script src="{{ asset('js/script.js') }}"></script>
-<script src="{{ asset('js/formoid.min.js') }}"></script>
-
+<script src="{{ asset('js/mbr-popup-btns.js')}}"></script>
+<script src="{{ asset('js/script.js')}}"></script>
+<script src="{{ asset('js/player.min.js')}}"></script>
+<script src="{{ asset('js/formoid.min.js')}}"></script>
+<script src="{{ asset('js/vimeo_player.js')}}"></script>
+<script src="{{ asset('js/jquery.mb.ytplayer.min.js')}}"></script>
+<script src="{{ asset('js/script(1).js')}}"></script>
+<script src="{{ asset('js/script(2).js')}}"></script>
+<script src="{{ asset('js/script(3).js')}}"></script>
+<script src="{{ asset('js/jquery.mb.vimeo_player.js')}}"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 <script>
     <!-- Flash Message Overlay會用到，需保留
     -->

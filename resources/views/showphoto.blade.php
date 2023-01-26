@@ -60,7 +60,7 @@
                         data-interval="false">
                         <ol class="carousel-indicators">
                             @foreach ($silders as $silder)
-                                <li data-app-prevent-settings="" data-target="#slider1-24"
+                                <li data-app-prevent-settings="" data-bs-target="#slider1-24"
                                     data-slide-to="{{ $silder->sort }}"
                                     @if ($loop->first) class="active" @endif></li>
                             @endforeach
@@ -69,18 +69,11 @@
                             @foreach ($silders as $silder)
                                 <div class="carousel-item slider-fullscreen-image @if ($loop->first) active @endif"
                                     data-bg-video-slide="false"
-                                    style="background-image: url({{ Voyager::image($silder->pic) }});">
+                                    style="background-image: {{ Voyager::image($silder->pic) }};">
                                     <div class="container container-slide">
                                         <div class="image_wrapper">
                                             <div class="mbr-overlay"></div><img src="{{ Voyager::image($silder->pic) }}"
                                                 title="{{ $silder->title }}">
-                                            <div class="carousel-caption justify-content-center">
-                                                <div class="col-10 align-center">
-                                                    <p class="lead mbr-text mbr-fonts-style display-7">
-                                                        {{ $silder->content }}
-                                                    </p>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
