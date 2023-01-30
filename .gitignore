@@ -6,7 +6,6 @@
 /route/
 /vendor/*
 .env
-.env.*
 .env.backup
 .env.production
 .phpunit.result.cache
