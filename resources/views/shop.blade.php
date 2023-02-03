@@ -23,7 +23,7 @@
                 <div class="col-12 col-md-12 col-lg-12">
                 </div>
 
-                <div class="card col-12 col-md-6 col-lg-3">
+                <div class="card col-12 col-md-6 col-lg-2">
 
                     <svg class="svg31" xmlns="http://www.w3.org/2000/svg" width="309.28570556640625"
                         height="336.02197265625" style="">
@@ -90,7 +90,7 @@
                 </div>
 
 
-                <div class="card col-12 col-md-6 col-lg-3">
+                <div class="card col-12 col-md-6 col-lg-2">
 
                     <svg class="svg11" xmlns="http://www.w3.org/2000/svg" width="309.2857111417329"
                         height="336.0219772158291" style="">
@@ -137,7 +137,7 @@
                     </div>
                 </div>
 
-                <div class="card col-12 col-md-6 col-lg-3">
+                <div class="card col-12 col-md-6 col-lg-2">
 
                     <svg class="svg21" xmlns="http://www.w3.org/2000/svg" width="309.28570556640625"
                         height="336.02197265625" style="">
@@ -204,7 +204,7 @@
                     </div>
                 </div>
 
-                <div class="card col-12 col-md-6 col-lg-3">
+                <div class="card col-12 col-md-6 col-lg-2">
 
                     <svg class="svg31 svg4" xmlns="http://www.w3.org/2000/svg" width="309.28570556640625"
                         height="336.02197265625" style="">
